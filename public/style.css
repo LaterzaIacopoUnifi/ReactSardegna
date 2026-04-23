@@ -186,10 +186,9 @@
 /*    }*/
 /*}*/
 
-#top-grid{
-    display: flow-root;
-    border-style: solid;
-    border-width: 7px;
+#width_page{
+    max-width: 990px;
+    margin: 0 auto;
 }
 
 #grid{
@@ -198,6 +197,41 @@
     border-width: 7px;
 }
 
+#logo-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-width: 7px;
+    padding: 0 10px;
+}
+
+#logo-grid p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#red_block{
+    background-color: #921421;
+    cursor: pointer;
+    padding: 8px 16px
+}
+
+#red_block p{
+    color: white;
+
+}
 
 .left{
     background-color: rgb(182 146 22);
@@ -231,13 +265,24 @@
     width: 33.33%;
 }
 
-#container{
-    box-sizing: border-box;
+.inline{
+    display: inline-block;
+}
+
+#header{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+#header .active {
+    background-color: red;
 }
 
 #header a{
     display: inline-block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -251,18 +296,69 @@
     background-color: green;
 }
 
-#header .active {
-    background-color: red;
-}
 
-#header{
+
+#menu_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #063a74;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(0 0 0 / 0.55);
 }
 
-#inline{
-    display: inline-block;
+#menu_bar div{
+    align-items: center;
+    display: flex;
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.75;
+    color : white;
+}
+
+#menu_bar p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+#edition_bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display : flex;
+    justify-content: space-between;
+}
+
+#edition_bar li{
+}
+
+#edition_bar a{
+    text-decoration: none;
+    color: black;
+}
+
+.center{
+    text-align: center;
+}
+
+.black{
+    color: black;
+}
+
+.video{
+    background-color: #e6e6e6;
+}
+
+.video_slide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
 }
