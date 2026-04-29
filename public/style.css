@@ -251,7 +251,7 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-family: ITCFranklinGothicStd-Book;
+    font-family: ITCFranklinGothicStd-Book, serif;
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.75;
@@ -377,14 +377,12 @@ body {
 
 .video h2 {
     margin: 0;
-    font-family: ITCFranklinGothicStd-Book,Franklin_Gothic_Book,PoynterOldstyleDisplay-SemiBold,PoynterOldstyleDisplay-NarSemiBd,PoynterOldstyleDisplay-NarRoman,PoynterOldstyleDisplay-NarBold,Utopia-Regular;
     font-weight: 500;
     font-size: 1.125rem;
     line-height: 1.6;
     text-align: center;
-    font-family: PoynterOldstyleDisplay-NarRoman;
     color: black;
-    font-family: PoynterOldstyleDisplay-NarBold;
+    font-family: PoynterOldstyleDisplay-NarBold, serif;
     padding-top: 8px;
     padding-bottom: 8px;
 }
