@@ -1,867 +1,974 @@
-<!--<head>-->
-<!--  <meta charset="UTF-8" />-->
-<!--  <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />-->
-<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
-<!--  <title>WS playground</title>-->
-<!--  <link rel="stylesheet" href="/style.css">-->
-<!--</head>-->
-<!--<body>-->
-<!--<header class="logo">-->
-<!--  <a href="https://www.jetbrains.com/webstorm/">-->
-<!--    <img src="/webstorm-logo.svg" alt="WebStorm logo" width="344"-->
-<!--         height="90">-->
-<!--  </a>-->
-<!--</header>-->
-<!--<main id="app">-->
-<!--  <h1 class="title">-->
-<!--    Thank you for trying it out. <br /> Your first project is up and running-->
-<!--    now.-->
-<!--  </h1>-->
-<!--  <section class="counter">-->
-<!--    <div class="counter-info">-->
-<!--      <p class="counter-text">Counter is</p>-->
-<!--      <p class="counter-value" id="counter-value"></p>-->
-<!--    </div>-->
-<!--    <div class="counter-interaction">-->
-<!--      <button id="increaseByOne" type="button">+1</button>-->
-<!--      <button id="increaseByTwo" type="button">+2</button>-->
-<!--      <button id="decreaseByOne" type="button">-1</button>-->
-<!--      <button id="decreaseByTwo" type="button">-2</button>-->
-<!--    </div>-->
-<!--  </section>-->
-<!--</main>-->
-<!--<footer class="technologies">-->
-<!--  <img src="/technologies.svg" alt="List of supported technologies">-->
-<!--</footer>-->
-<!--<script type="module" src="/src/main.js"></script>-->
-
 <!doctype html>
 <html lang="en">
 <body>
 <link rel="stylesheet" href="/style.css">
-
-<div id="width_page">
-  <div id="header" class="bordobasso_chiaro">
-    <div><a href="#about"><img src="image/facebook_logo.png" alt="whatsapp" width="23,8px" height="24px" ></a></div>
-    <div class="left-margin"><a href="#contact"><img src="image/x_logo.png" alt="whatsapp" width="24px" height="24px" ></a></div>
-    <div class="left-margin"><a href="#news"><img src="image/instagram_logo.png" alt="whatsapp" width="24px" height="24px" ></a></div>
-    <div class="left-margin"><a href="#home" class="active"><img src="image/whatsapp_logo.png" alt="whatsapp" width="24px" height="24px" ></a></div>
-  </div>
-
-  <div id="logo-grid">
-    <div>
-      <p>
-        <img class="margin8" src="image/newspaper_logo.png" alt="miao" width="20" height="20">
-        Sfoglia il quotidiano
-      </p>
+<header>
+    <div id="Social" class="social bordobasso_chiaro">
+        <div><a href="https://www.facebook.com"><img src="image/facebook_logo.png" alt="whatsapp" width="23,8px" height="24px"></a></div>
+        <div class="left-margin"><a href="https://www.x.com"><img src="image/x_logo.png" alt="whatsapp" width="24px" height="24px"></a></div>
+        <div class="left-margin"><a href="https://www.instagram.com/"><img src="image/instagram_logo.png" alt="whatsapp" width="24px" height="24px"></a></div>
+        <div class="left-margin"><a href="https://www.whatsapp.com/" class="active"><img src="image/whatsapp_logo.png" alt="whatsapp" width="24px" height="24px"></a></div>
     </div>
-    <div>
-      <p>
-        <img src="image/sito_logo.png" width="280px" height="70px">
-      </p>
-    </div>
-    <div class="divider">
-      <div>
-        <p>
-          <img src="image/user.png" width="16px" height="17px">ACCEDI</p>
-      </div>
-      <button type="button" class="red_block">ABBONATI</button>
-    </div>
-  </div>
 
-  <nav id="menu_bar">
-    <ul id="left_menu">
-      <li>
-        <a href="#menu">
-          <img src="image/menu.png" alt="Menu" width="20" height="20" >
-          MENU</a>
-      </li>
-    </ul>
-    <ul id="middle_menu">
-      <li><a href="#Sardegna">SARDEGNA</a></li>
-      <li><a href="#ItaliaMondo">ITALIA MONDO</a></li>
-      <li><a href="#Sport">SPORT</a></li>
-      <li><a href="#TempoLibero">TEMPO LIBERO</a></li>
-      <li><a href="#Video">VIDEO</a></li>
-      <li><a href="#LaNuovaScuola">LANUOVA@SCUOLA</a></li>
-      <li><a href="#Economia">ECONOMIA</a></li>
-      <li><a href="#Top1000">TOP1000</a></li>
-    </ul>
-    <ul id="right_menu">
-      <li>
-        <a href="#Cerca">
-          <img src="image/search-interface-symbol.png" alt="Cerca" width="20" height="20" >
-          CERCA
+    <div id="logo-grid">
+        <div>
+            <p>
+                <img src="image/newspaper_logo.png" alt="miao" width="20" height="20">
+                Sfoglia il quotidiano
+            </p>
+        </div>
+        <div>
+            <a href="https://www.lanuovasardegna.it/">
+                <p>
+                    <img src="https://placehold.co/280x70/png">
+                </p>
+            </a>
+        </div>
+        <div class="accedi-abbonati">
+            <div>
+                <p>
+                    <img src="image/user.png" width="16px" height="17px">ACCEDI</p>
+            </div>
+            <div class="red_button">
+                <button>ABBONATI</button>
+            </div>
+        </div>
+    </div>
+
+    <nav id="menu_bar">
+        <ul id="left_menu">
+            <li>
+                <a href="#menu">
+                    <img src="image/menu.png" alt="Menu" width="20" height="20">
+                    MENU</a>
+            </li>
+        </ul>
+        <ul id="middle_menu">
+            <li><a href="#PrimoPianoNews">SARDEGNA</a></li>
+            <li><a href="#ItaliaMondo">ITALIA MONDO</a></li>
+            <li><a href="#Sport">SPORT</a></li>
+            <li><a href="#https://www.lanuovasardegna.it/tempo-libero">TEMPO LIBERO</a></li>
+            <li><a href="#UltimiVideo">VIDEO</a></li>
+            <li><a href="#LaNuovaScuola">LANUOVA@SCUOLA</a></li>
+            <li><a href="#Economia">ECONOMIA TOP1000</a></li>
+        </ul>
+        <ul id="right_menu">
+            <li>
+                <a href="https://www.lanuovasardegna.it/ricerca?q=">
+                    <img src="image/search-interface-symbol.png" alt="Cerca" width="20" height="20">
+                    CERCA
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="edition">
+        <h6 class="center"> SCEGLI L'EDIZIONE</h6>
+        <ul>
+            <li><a href="https://www.lanuovasardegna.it/sassari/cronaca" class="active">Sassari</a></li>
+            <li><a href="https://www.lanuovasardegna.it/alghero/cronaca">Alghero</a></li>
+            <li><a href="https://www.lanuovasardegna.it/cagliari/cronaca">Cagliari</a></li>
+            <li><a href="https://www.lanuovasardegna.it/nuoro/cronaca">Nuoro</a></li>
+            <li><a href="https://www.lanuovasardegna.it/olbia/cronaca" class="active">Olbia</a></li>
+            <li><a href="https://www.lanuovasardegna.it/oristano/cronaca" class="active">Oristano</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="width_page">
+
+
+    <section class="video">
+        <h2>I video Del Giorno</h2> <!-- mettere tag a-->
+        <div class="video_slide">
+            <div>
+                <img src="https://placehold.co/228x120/png">
+                <article>
+                    <span>Integer suscipit</span>
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</h2>
+                </article>
+            </div>
+            <div>
+                <img src="https://placehold.co/228x120/png">
+                <article>
+                    <span>suscipit Integer </span>
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</h2>
+                </article>
+            </div>
+            <div>
+                <img src="https://placehold.co/228x120/png">
+                <article>
+                    <span>Intsuscipit eger </span>
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</h2>
+                </article>
+            </div>
+            <div>
+                <img src="https://placehold.co/228x120/png">
+                <article>
+                    <span>Int suscipitsuscipit</span>
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</h2>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="PrimoPianoNews">
+        <div>
+            <h5>Primo Piano</h5>
+            <div class="PPNgrande">
+                <a href="news/news1.html">
+                    <img src="https://placehold.co/644x362/png">
+                    <span class="normal_span">Cras a</span>
+                    <h2>Quisque in felis mauris. Nulla convallis metus eros, vel luctus nunc varius et. Suspendisse at
+                        arcu congue, eleifend lacus at, vehicula quam. Praesent efficitur. </h2>
+                    <span class="autore">di Martin Luther King</span>
+                </a>
+            </div>
+            <div class="PPNpiccolo">
+                <a href="news/news2.html">
+                    <img src="https://placehold.co/318x180/png" alt="Notizia Principale">
+                    <article>
+                        <span class="normal_span">Suspendisse imperdiet sem.</span>
+                        <h2>Nam interdum tincidunt aliquet. Etiam sodales lobortis ipsum nec facilisis.
+                            Nam. </h2>
+                    </article>
+                </a>
+                <a href="news/news2.html">
+                    <article>
+                        <span class="normal_span">Aenean accumsan pretium.</span>
+                        <h2 class="news_small">Vestibulum ac nunc faucibus, tincidunt tellus sit amet, suscipit elit. Integer laoreet
+                            ullamcorper. </h2>
+                    </article>
+                </a>
+                <a href="news/news2.html">
+                    <article>
+                        <span class="normal_span">Cras pulvinar magna.</span>
+                        <h2  class="news_small">In sit amet urna nec leo laoreet ultrices. Curabitur rutrum erat vitae congue. </h2>
+                    </article>
+                </a>
+            </div>
+        </div>
+
+
+        <div id="PrimoPianoNewsMinor" class="black">
+            <div class="news_slide bordobasso_scuro">
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <img src="https://placehold.co/318x180/png" alt="Piccola Notizia Principale">
+                        <article>
+                            <span>Vestibulum egestas</span>
+                            <h2 class="normal_h2">Aliquam sed dolor posuere, interdum ipsum nec, egestas arcu. Praesent ullamcorper
+                                nisl.</h2>
+                        </article>
+                    </a>
+                </div>
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <img src="https://placehold.co/318x180/png" alt="Piccola Notizia Principale">
+                        <article>
+                            <span>Donec congue</span>
+                            <h2 class="normal_h2"> Vestibulum consectetur urna nisl, dictum mattis velit tincidunt eu. Sed aliquam
+                                turpis. </h2>
+                        </article>
+                    </a>
+                </div>
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <img src="https://placehold.co/318x180/png" alt="Piccola Notizia Principale">
+                        <article>
+                            <span>In venenatis</span>
+                            <h2 class="normal_h2">Vivamus efficitur orci in nulla auctor, ac ullamcorper erat molestie. Nam sed</h2>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="Network" class="black">
+        <h5>Network SAE</h5>
+        <div class="network_slide">
+            <div class="network_slide_single">
+                <a href="news/news1.html">
+                    <img src="https://placehold.co/290x77/png">
+                </a>
+            </div>
+            <div class="network_slide_single">
+                <a href="news/news1.html">
+                    <img src="https://placehold.co/290x77/png">
+                </a>
+            </div>
+            <div class="network_slide_single">
+                <a href="news/news1.html">
+                    <img src="https://placehold.co/290x77/png">
+                </a>
+            </div>
+        </div>
+
+        <ul class="bottoni-linea">
+            <li class="slick-active">
+                <button>1<!-- --></button>
+            </li>
+            <li class="">
+                <button>2<!-- --></button>
+            </li>
+            <li class="">
+                <button>3<!-- --></button>
+            </li>
+            <li class="">
+                <button>4<!-- --></button>
+            </li>
+            <li class="">
+                <button>5<!-- --></button>
+            </li>
+            <li class="">
+                <button>6<!-- --></button>
+            </li>
+            <li class="">
+                <button>7<!-- --></button>
+            </li>
+            <li class="">
+                <button>8<!-- --></button>
+            </li>
+        </ul>
+    </div>
+
+    <div id="Evidenza">
+        <div class="long">
+            <section class="smaller">
+                <h5>In evidenza</h5>
+                <div class="text_left">
+                    <div><img src="https://placehold.co/316x178/png"></div>
+                    <a href="news/news1.html">
+                        <article>
+                            <span class="normal_span">Sed congue</span>
+                            <h2 class="normal_h2">Integer a magna id odio commodo cursus. Aliquam ultricies neque enim</h2>
+                            <span class="autore">Cras vestibulum tellus. </span>
+                        </article>
+                    </a>
+                </div>
+            </section>
+            <section class="greater">
+                <div class="news_colomn">
+                    <div class="news_left">
+                        <a href="news/news2.html">
+                            <div><img src="https://placehold.co/315x176/png"></div>
+                            <article>
+                                <span class="normal_span">Orci varius</span>
+                                <h2 class="normal_h2">Cras finibus venenatis arcu sit amet iaculis. Cras sed accumsan nisi. Fusce
+                                    porttitor enim cursus dignissim commodo. Donec at diam. </h2>
+                                <span class="autore">Proin aliquam</span>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="news_right">
+                        <a href="news/news2.html">
+                            <div><img src="https://placehold.co/315x176/png"></div>
+                            <article>
+                                <span class="normal_span">Aenean bibendum</span>
+                                <h2 class="normal_h2">Pellentesque tincidunt rhoncus purus, a tincidunt ligula pretium at. Nunc vel dictum
+                                    nisl. Vivamus et pulvinar nunc, nec consectetur urna. </h2>
+                                <span class="autore ">Integer vel</span>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="news_left">
+                        <a href="news/news2.html">
+                            <div><img src="https://placehold.co/315x176/png"></div>
+                            <article>
+                                <span class="normal_span">Fusce congue</span>
+                                <h2 class="normal_h2">Maecenas ut nisi purus. Etiam suscipit, neque vitae malesuada consectetur, diam mi
+                                    mattis dui, at commodo augue purus ut nibh. </h2>
+                                <span class="autore ">Nunc sed</span>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="news_right">
+                        <a href="news/news2.html">
+                            <div><img src="https://placehold.co/315x176/png"></div>
+                            <article>
+                                <span class="normal_span">Morbi id</span>
+                                <h2  class="normal_h2">Fusce porta nunc quis dignissim imperdiet. Vestibulum lacinia urna luctus, commodo
+                                    lacus nec, rutrum ligula. Sed sagittis a augue a. </h2>
+                                <span class="autore ">Sed in</span>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="news_left">
+                        <a href="news/news2.html">
+                            <div><img src="https://placehold.co/315x176/png"></div>
+                            <article>
+                                <span class="normal_span">Quisque sollicitudin</span>
+                                <h2  class="normal_h2">Nulla id metus vulputate, commodo felis id, consequat diam. Curabitur et arcu in
+                                    nulla dictum blandit. Donec lobortis tempor ligula</h2>
+                                <span class="autore ">Aliquam erat</span>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="news_right">
+                        <a href="news/news2.html">
+                            <div><img src="https://placehold.co/315x176/png"></div>
+                            <article>
+                                <span class="normal_span">Ut pellentesque</span>
+                                <h2 class="normal_h2">Proin sed nibh quis est egestas vulputate vel ac orci. Curabitur non lectus
+                                    faucibus, consectetur felis quis, sollicitudin odio. Sed.</h2>
+                                <span class="autore ">Duis volutpat</span>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="side">
+            <a class="space"></a>
+            <section>
+                <div class="Cultura">
+                    <div></div>
+                    <h5 class="text_Cultura">Cultura e Spettacolo</h5>
+                </div>
+                <div class="news_colomn">
+                    <div class="bordobasso_chiaro">
+                        <a href="news/news1.html">
+                            <img src="https://placehold.co/318x179/png">
+                            <article>
+                                <span class="normal_span">Aliquam dapibus</span>
+                                <h2 class="normal_h2">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    curae; Sed ornare eros augue, vel accumsan nunc</h2>
+                                <span class="autore  ">Aliquam atres</span>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="bordobasso_chiaro">
+                        <a href="news/news1.html">
+                            <img src="https://placehold.co/318x179/png">
+                            <article>
+                                <span class="normal_span">Morbi euismod</span>
+                                <h2 class="normal_h2">Nam est augue, tempor a leo mollis, pulvinar accumsan magna. Quisque consectetur
+                                    felis dolor, sed dapibus lectus placerat ut. Curabitur</h2>
+                                <span class="autore ">Duis aliquam</span>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="news/news1.html">
+                            <img src="https://placehold.co/318x179/png">
+                            <article>
+                                <span class="normal_span">Aenean blandit orci. </span>
+                                <h2 class="normal_h2">Proin vestibulum neque finibus justo ullamcorper placerat. Sed efficitur nec tellus
+                                    nec euismod. Donec leo odio, faucibus ac ultrices at</h2>
+                                <span class="autore ">Nunc duis</span>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+                <div class="center red_button">
+                    <button>Quisque mattis elementum</button>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <div id="LaNuovaScuola">
+        <a href="index.html">
+            <div class="center"><img src="https://placehold.co/958x95/png"></div>
+            <div class="red_button">
+                <button>Quisque mattis elementum</button>
+            </div>
         </a>
-      </li>
-    </ul>
-  </nav>
-
-  <nav class="edition">
-    <h6 class="center"> SCEGLI L'EDIZIONE</h6>
-    <ul>
-      <li><a href="#menu" class="active" >Sassari</a></li>
-      <li><a href="#sardegna">Alghero</a></li>
-      <li><a href="#italia_mondo">Cagliari</a></li>
-      <li><a href="#sport">Nuoro</a></li>
-      <li><a href="#tempo_libero" class="active">Olbia</a></li>
-      <li><a href="#video" class="active">Oristano</a></li>
-    </ul>
-  </nav>
-
-  <section class="video">
-    <h2>I video Del Giorno</h2> <!-- mettere tag a-->
-    <div class="video_slide">
-      <div>
-        <img src="image/notizia1.png" >
-        <article>
-          <span>Integer suscipit</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</p>
-        </article>
-      </div>
-      <div>
-        <img src="image/notizia2.png">
-        <article>
-          <span>suscipit Integer </span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</p>
-        </article>
-      </div>
-      <div>
-        <img src="image/notizia3.png">
-        <article>
-          <span>Intsuscipit eger </span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</p>
-        </article>
-      </div>
-      <div>
-        <img src="image/notizia4.png">
-        <article>
-          <span>Int suscipitsuscipit</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="PrimoPianoNews">
-    <div>
-      <h5>Primo Piano</h5>
-      <div class="PPNgrande">
-        <a href="news/news1.html">
-          <img src="image/643x361.png">
-          <span>Cras a</span>
-          <h2>Quisque in felis mauris. Nulla convallis metus eros, vel luctus nunc varius et. Suspendisse at arcu congue, eleifend lacus at, vehicula quam. Praesent efficitur. </h2>
-          <span class="autore">di Martin Luther King</span>
-        </a>
-      </div>
-      <div class="PPNpiccolo" >
-        <a href="news/news2.html">
-          <img src="image/notizia1.png" alt="Notizia Principale">
-          <article>
-            <span>Suspendisse imperdiet sem.</span>
-            <h2 class="news_big">Nam interdum tincidunt aliquet. Etiam sodales lobortis ipsum nec facilisis. Nam. </h2>
-          </article>
-        </a>
-        <a href="news/news2.html">
-          <article>
-            <span>Aenean accumsan pretium.</span>
-            <h2>Vestibulum ac nunc faucibus, tincidunt tellus sit amet, suscipit elit. Integer laoreet ullamcorper. </h2>
-          </article>
-        </a>
-        <a href="news/news2.html" >
-          <article>
-            <span>Cras pulvinar magna.</span>
-            <h2>In sit amet urna nec leo laoreet ultrices. Curabitur rutrum erat vitae congue. </h2>
-          </article>
-        </a>
-      </div>
     </div>
 
-
-    <div id="PrimoPianoNewsMinor" class="black">
-      <div class="news_slide bordobasso">
-        <div class = "news_slide_single">
-          <a href="news/news1.html">
-            <img src="image/notizia3.png" alt="Piccola Notizia Principale">
-            <article>
-              <span>Vestibulum egestas</span>
-              <h2>Aliquam sed dolor posuere, interdum ipsum nec, egestas arcu. Praesent ullamcorper nisl.</h2>
-            </article>
-          </a>
+    <section id="Sport">
+        <h5>Sport</h5>
+        <div class="news_block">
+            <div class="news_colomn_twin">
+                <div>
+                    <img src="https://placehold.co/481x270/png">
+                    <a href="news/news1.html">
+                        <article>
+                            <span class="normal_span">Proin bibendum</span>
+                            <h2 class="normal_h2">Mauris lectus erat, viverra eget metus viverra, tempus sollicitudin erat. Vivamus luctus arcu sed diam eleifend auctor. Suspendisse quis metus</h2>
+                        </article>
+                    </a>
+                    <div class="link_secondario">
+                        <span style="color:#063A74;font-size:18px;">&#9687;</span>
+                        <a href="news/news12.html">&#171;Cras consectetur, felis quis venenatis viverra&#187;: , nisi dui commodo nibh, sit amet tincidunt erat augue a nunc. Curabitur imperdiet et.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="news_colomn_twin">
+                <div>
+                    <a href="news/news1.html">
+                        <div class="text_left bordobasso_scuro">
+                            <div><img src="https://placehold.co/236x133/png"></div>
+                            <article>
+                                <span class="normal_span">caccio</span>
+                                <h2 class="normal_h2">devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
+                            </article>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="news/news1.html">
+                        <div class="text_left bordobasso_scuro">
+                            <div><img src="https://placehold.co/236x133/png" width="236" height="133"></div>
+                            <article>
+                                <span class="normal_span">caccio</span>
+                                <h2 class="normal_h2">devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
+                            </article>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="news/news1.html">
+                        <div class="text_left">
+                            <div><img src="https://placehold.co/236x133/png"></div>
+                            <article>
+                                <span class="normal_span">caccio</span>
+                                <h2  class="normal_h2">devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
+                            </article>
+                        </div>
+                    </a>
+                    <div class="link_secondario">
+                        <span style="color:#063A74;font-size:18px;">&#9687;</span>
+                        <a href="news/news12.html">&#171;Ci sono spiagge belle, poi c'è Cala Goloritzè&#187;: lo spot
+                            della Sardegna è sul New York Times</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class = "news_slide_single">
-          <a href="news/news1.html">
-            <img src="image/notizia4.png" alt="Piccola Notizia Principale">
-            <article>
-              <span>Donec congue</span>
-              <h2> Vestibulum consectetur urna nisl, dictum mattis velit tincidunt eu. Sed aliquam turpis. </h2>
-            </article>
-          </a>
+
+        <div class="white_button">
+            <button>TUTTI GLI ARTICOLI&#10132;</button>
         </div>
-        <div class = "news_slide_single">
-          <a href="news/news1.html">
-            <img src="image/notizia1.png" alt="Piccola Notizia Principale">
-            <article>
-              <span>In venenatis</span>
-              <h2>Vivamus efficitur orci in nulla auctor, ac ullamcorper erat molestie. Nam sed</h2>
-            </article>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-
-  <div id="Network" class="black">
-    <h5>Network SAE</h5>
-    <div class="network_slide">
-      <div>
-        <div class="network_slide_single">
-          <a href="news/news1.html">
-            <img src="image/ilTirreno.png">
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="network_slide_single">
-          <a href="news/news1.html">
-            <img src="image/ilTirreno.png">
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="network_slide_single">
-          <a href="news/news1.html">
-            <img src="image/ilTirreno.png">
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <ul class="bottoni-linea">
-        <li class="slick-active"><button>1<!-- --></button></li>
-        <li class=""><button>2<!-- --></button></li>
-        <li class=""><button>3<!-- --></button></li>
-        <li class=""><button>4<!-- --></button></li>
-        <li class=""><button>5<!-- --></button></li>
-        <li class=""><button>6<!-- --></button></li>
-        <li class=""><button>7<!-- --></button></li>
-        <li class=""><button>8<!-- --></button></li>
-      </ul>
-  </div>
-
-  <div id="Evidenza">
-    <div class="long"> <!-- nome da correggere-->
-      <section>
-        <h5>In evidenza</h5>
-        <div class="text_left"> <!-- dimensioni da correggere-->
-          <div><img src="image/notizia3.png"></div>
-          <a href="news/news1.html">
-            <article>
-              <span>Sopratitolo</span>
-              <h2 class="news_big">caccio devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto test per.</h2>
-            </article>
-          </a>
-        </div>
-      </section>
-      <section class="greater">
-        <div class="news_colomn">
-          <div>
-            <a href="news/news2.html">
-              <div><img src="image/228x128.png"></div>
-              <article>
-                <span>Orci varius</span>
-                <h2>Cras finibus venenatis arcu sit amet iaculis. Cras sed accumsan nisi. Fusce porttitor enim cursus dignissim commodo. Donec at diam. </h2>
-                <span class="spanPiccolo">Proin aliquam</span>
-              </article>
-              </a>
-          </div>
-
-          <div>
-            <a href="news/news2.html">
-              <div><img src="image/228x128.png"></div>
-              <article>
-                <span>Aenean bibendum</span>
-                <h2>Pellentesque tincidunt rhoncus purus, a tincidunt ligula pretium at. Nunc vel dictum nisl. Vivamus et pulvinar nunc, nec consectetur urna. </h2>
-                <span class="spanPiccolo">Integer vel</span>
-              </article>
-            </a>
-          </div>
-
-          <div>
-            <a href="news/news2.html">
-              <div><img src="image/228x128.png"></div>
-              <article>
-                <span>Fusce congue</span>
-                <h2>Maecenas ut nisi purus. Etiam suscipit, neque vitae malesuada consectetur, diam mi mattis dui, at commodo augue purus ut nibh. </h2>
-                <span class="spanPiccolo">Nunc sed</span>
-              </article>
-            </a>
-          </div>
-
-          <div>
-            <a href="news/news2.html">
-              <div><img src="image/228x128.png"></div>
-              <article>
-                <span>Morbi id</span>
-                <h2>Fusce porta nunc quis dignissim imperdiet. Vestibulum lacinia urna luctus, commodo lacus nec, rutrum ligula. Sed sagittis a augue a. </h2>
-                <span class="spanPiccolo">Sed in</span>
-              </article>
-            </a>
-          </div>
-
-          <div>
-            <a href="news/news2.html">
-              <div><img src="image/228x128.png"></div>
-              <article>
-                <span>Quisque sollicitudin</span>
-                <h2>Nulla id metus vulputate, commodo felis id, consequat diam. Curabitur et arcu in nulla dictum blandit. Donec lobortis tempor ligula</h2>
-                <span class="spanPiccolo">Aliquam erat</span>
-              </article>
-            </a>
-          </div>
-
-          <div>
-            <a href="news/news2.html">
-              <div><img src="image/228x128.png"></div>
-              <article>
-                <span>Ut pellentesque</span>
-                <h2>Proin sed nibh quis est egestas vulputate vel ac orci. Curabitur non lectus faucibus, consectetur felis quis, sollicitudin odio. Sed.</h2>
-                <span class="spanPiccolo">Duis volutpat</span>
-              </article>
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="small">
-      <a class="space"></a>
-      <section>
-        <div class="Cultura">
-          <div> </div>
-          <h5 class="text_Cultura">Cultura e Spettacolo</h5>
-        </div>
-        <div class="news_colomn">
-          <div class="bordobasso_chiaro">
-            <a href="news/news1.html">
-              <img src="image/228x128.png" width="318" height="179">
-              <article>
-                <span>Aliquam dapibus</span>
-                <h2>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ornare eros augue, vel accumsan nunc</h2>
-                <span class="spanPiccolo">Aliquam atres</span>
-              </article>
-            </a>
-          </div>
-          <div class="bordobasso_chiaro">
-            <a href="news/news1.html">
-              <img src="image/228x128.png" width="318" height="179">
-              <article>
-                <span>Morbi euismod</span>
-                <h2>Nam est augue, tempor a leo mollis, pulvinar accumsan magna. Quisque consectetur felis dolor, sed dapibus lectus placerat ut. Curabitur</h2>
-                <span class="spanPiccolo">Duis aliquam</span>
-              </article>
-            </a>
-          </div>
-
-          <div>
-            <a href="news/news1.html">
-              <img src="image/228x128.png" width="318" height="179">
-              <article>
-                <span>TitoloNews</span>
-                <h2>Proin vestibulum neque finibus justo ullamcorper placerat. Sed efficitur nec tellus nec euismod. Donec leo odio, faucibus ac ultrices at</h2>
-                <span class="spanPiccolo">Nunc duis</span>
-              </article>
-            </a>
-          </div>
-        </div>
-          <div class="center red_button"><button>TUTTI GLI ARTICOLI</button></div>
-      </section>
-
-    </div>
-  </div>
-
-  <div id="LaNuovaScuola">
-    <a href="index.html">
-      <div class="center"><h1>LA NUOVA@SCUOLA</h1></div>
-      <div class="red_button">
-        <button>cazzi duri miao</button>
-      </div>
+    <a href="news/news1.html">
+        <div class="ad"><img src="https://placehold.co/974x509/png"></div>
     </a>
-  </div>
 
-  <section id="Sport">
-    <h5>Sport</h5>
-    <div class="news_block">
-      <div class="news_colomn_twin">
+    <section id="ItaliaMondo" class="bordobasso_scuro">
+        <div class="black">
+            <h5>Italia-Mondo</h5>
+            <div class="news_slide">
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <div>
+                            <img src="https://placehold.co/318x179/png">
+                        </div>
+                        <article>
+                            <span>Lorem ipsum </span>
+                            <h2  class="normal_h2">In a justo non augue iaculis tempor. Sed quis tortor lectus. Pellentesque ornare vestibulum tellus at tempus. Quisque non libero</h2>
+                        </article>
+                    </a>
+                </div>
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <div>
+                            <img src="https://placehold.co/318x179/png">
+                        </div>
+                        <article>
+                            <span>Sed eleifend </span>
+                            <h2 class="normal_h2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nulla lacus, sollicitudin non eros non, laoreet aliquam urna. In malesuada</h2>
+                        </article>
+                    </a>
+                </div>
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <div>
+                            <img src="https://placehold.co/318x179/png">
+                        </div>
+                        <article>
+                            <span>Etiam rhoncus</span>
+                            <h2 class="normal_h2">Nullam vulputate arcu dictum, vestibulum eros id, maximus ex. Integer ac leo non magna eleifend pretium a pulvinar diam. Morbi</h2>
+                        </article>
+                    </a>
+                </div>
+            </div>
+            <div class="news_slide">
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <div>
+                            <img src="https://placehold.co/318x179/png">
+                        </div>
+                        <article>
+                            <span>TitoloNews</span>
+                            <h2 class="normal_h2">Vivamus gravida odio diam. Maecenas molestie vestibulum lorem nec vulputate.</h2>
+                        </article>
+                    </a>
+                </div>
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <div>
+                            <img src="https://placehold.co/318x179/png">
+                        </div>
+                        <article>
+                            <span>TitoloNews</span>
+                            <h2 class="normal_h2">Proin tincidunt efficitur ante, id porta erat dignissim id. Etiam venenatis est orci</h2>
+                        </article>
+                    </a>
+                </div>
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <div>
+                            <img src="https://placehold.co/318x179/png">
+                        </div>
+                        <article>
+                            <span>TitoloNews</span>
+                            <h2 class="normal_h2">Nullam fringilla, leo nec consequat volutpat, dui lectus aliquam massa</h2>
+                        </article>
+                    </a>
+                </div>
+            </div>
+            <div class="white_button">
+                <button> Nullam fringilla&#10132;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="Economia" class="bordobasso_scuro">
+        <div class="clear-block">
+            <div>
+                <a class="blue_box" href="news/news1.html">
+                    <h6 class="title_white">SPECIALE ECONOMIA</h6>
+                    <div class="center"><h2 class="title_white_opacity">Economia</h2>
+                        <h2 class="title_white">-</h2>
+                        <h2 class="title_white_opacity">Top1000</h2></div>
+                </a>
+            </div>
+            <div class="news_block">
+                <div class="news_colomn_twin">
+                    <div>
+                        <img src="https://placehold.co/481x270/png">
+                        <a href="news/news1.html">
+                            <article>
+                                <span class="normal_span">Vestibulum luctus</span>
+                                <h2 class="normal_h2">Etiam rhoncus imperdiet augue vitae ullamcorper. Aenean congue sit amet sem sed imperdiet. Morbi rhoncus purus tempor erat volutpat tincidunt. Sed at mollis ante, eu sodales massa</h2>
+                            </article>
+                        </a>
+                        <div class="link_secondario">
+                            <span style="color:#063A74;font-size:18px;">&#9687;</span>
+                            <a href="news/news12.html">&#171;Nullam aliquet viverra erat, sed tempus tortor&#187;: Proin est ipsum, faucibus quis massa interdum, euismod tristique sapien. Nullam posuere, libero vitae porttitor porta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_colomn_twin">
+                    <div>
+                        <a href="news/news1.html">
+                            <div class="news_button_pad text_left bordobasso_scuro">
+                                <div><img src="https://placehold.co/236x133/png"></div>
+                                <article>
+                                    <span class="normal_span">Morbi rhoncus</span>
+                                    <h2 class="normal_h2">Etiam quis nulla purus. Duis posuere mattis urna, at dictum odio elementum sodales. </h2>
+                                </article>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="news/news1.html">
+                            <div class="news_button_pad text_left bordobasso_scuro">
+                                <div><img src="https://placehold.co/236x133/png"></div>
+                                <article>
+                                    <span class="normal_span">Morbi orci</span>
+                                    <h2 class="normal_h2">Aliquam sit amet lacus nisi. Phasellus ex nisl, finibus id mollis nec, congue ut enim. </h2>
+                                </article>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="news/news1.html">
+                            <div class="text_left">
+                                <div><img src="https://placehold.co/236x133/png"></div>
+                                <article>
+                                    <span class="normal_span">Aliquam sit</span>
+                                    <h2 class="normal_h2">Nulla vitae tellus eu felis ultrices condimentum. Vestibulum ante ipsum primis in faucibus orci luctus</h2>
+                                </article>
+                            </div>
+                        </a>
+                        <div class="link_secondario">
+                            <span style="color:#063A74;font-size:18px;">&#9687;</span>
+                            <a href="news/news12.html">&#171;Nullam aliquet viverra erat, sed tempus tortor&#187;: Proin est ipsum, faucibus quis massa interdum, euismod tristique sapien. Nullam posuere, libero vitae porttitor porta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="UltimiVideo">
         <div>
-          <img src="image/228x128.png" width="481" height="270">
-          <a href="news/news1.html">
-            <article>
-              <span>Sopratitolo</span>
-              <h2>Titolo</h2>
-            </article>
-          </a>
-          <div class="link_secondario">
-            <span style="color:#063A74;font-size:18px;">&#9687;</span>
-            <a href="news/news12.html">&#171;Ci sono spiagge belle, poi c'è Cala Goloritzè&#187;: lo spot della Sardegna è sul New York Times</a>
-          </div>
-        </div>
-      </div>
-      <div class="news_colomn_twin">
-        <div>
-          <a href="news/news1.html">
-            <div class="text_left bordobasso_scuro">
-              <div><img src="image/228x128.png" width="236" height="133"></div>
-              <article>
-                <span>caccio</span>
-                <h2>devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
-              </article>
+            <div class="circle white center">
+                    <img src="image/webcam_logo.png" width="22" height="22"/>
             </div>
-          </a>
-        </div>
-        <div>
-          <a href="news/news1.html">
-            <div class="text_left bordobasso_scuro">
-              <div><img src="image/228x128.png" width="236" height="133"></div>
-              <article>
-                <span>caccio</span>
-                <h2>devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
-              </article>
+            <h4 class="center">Ultimi video</h4>
+            <div class="last_video">
+                <a href="news/news1.html">
+                    <div>
+                        <img src="https://placehold.co/228x128/png">
+                    </div>
+                    <article>
+                        <span class="title_white normal_span">Pellentesque habitant</span>
+                        <h2 class="normal_h2"> Vestibulum aliquet, nibh at ullamcorper pulvinar, sapien metus consequat sapien, id pellentesque orci enim a metus. Sed orci odio, tincidunt eu arcu faucibus, suscipit commodo mi</h2>
+                    </article>
+                </a>
+                <a href="news/news1.html">
+                    <div>
+                        <img src="https://placehold.co/228x128/png">
+                    </div>
+                    <article>
+                        <span class="title_white normal_span">Quisque rutrum</span>
+                        <h2 class="normal_h2">Aliquam fringilla laoreet augue. Etiam convallis accumsan massa, eu ultricies neque lobortis eu. Sed luctus mi sed nunc sagittis, sit amet eleifend quam fermentum</h2>
+                    </article>
+                </a>
+                <a href="news/news1.html">
+                    <div>
+                        <img src="https://placehold.co/228x128/png">
+                    </div>
+                    <article>
+                        <span class="title_white normal_span">Sed et felis</span>
+                        <h2 class="normal_h2">Suspendisse ut felis sit amet nulla posuere ultricies. Pellentesque id urna consectetur, molestie ligula eget, porttitor sem. Aliquam vulputate sed neque sit amet aliquam</h2>
+                    </article>
+                </a>
+                <a href="news/news1.html">
+                    <div>
+                        <img src="https://placehold.co/228x128/png">
+                    </div>
+                    <article>
+                        <span class="title_white normal_span">Etiam quis nulla purus</span>
+                        <h2 class="normal_h2">Maecenas ultricies urna mauris, id venenatis libero ullamcorper et. Cras sed diam dictum, tristique felis a, condimentum lectus</h2>
+                    </article>
+                </a>
             </div>
-          </a>
-        </div>
-        <div>
-          <a href="news/news1.html">
-            <div class="text_left">
-              <div><img src="image/228x128.png" width="236" height="133"></div>
-              <article>
-                <span>caccio</span>
-                <h2>devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
-              </article>
+            <div class="center">
+                <ul class="bottoni-linea">
+                    <li class="slick-active">
+                        <button>1<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>2<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>3<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>4<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>5<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>6<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>7<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>8<!-- --></button>
+                    </li>
+                </ul>
             </div>
-          </a>
-          <div class="link_secondario">
-            <span style="color:#063A74;font-size:18px;">&#9687;</span>
-            <a href="news/news12.html">&#171;Ci sono spiagge belle, poi c'è Cala Goloritzè&#187;: lo spot della Sardegna è sul New York Times</a>
-          </div>
+            <div class="center white_button">
+                <button>VEDI TUTTI&#10093;</button>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="white_button"><button>TUTTI GLI ARTICOLI&#10132;</button></div>
-  </section>
-
-  <a href="news/news1.html">
-    <div class="ad"><img src="image/228x128.png" width="974px" height="509px" ></div>
-  </a>
-
-  <section id="ItaliaMondo" class="bordobasso_scuro">
-    <div class="black bordobasso clear-box">
-      <h5>Italia-Mondo</h5>
-      <div class="news_slide">
-        <div class="news_slide_single">
-          <a href="news/news1.html">
+    <section id="SpecEnog" class="bordobasso_scuro">
+        <div class="clear-box">
             <div>
-              <img src="image/228x128.png" width="318" height="179">
+                <a class="blue_box" href="news/news1.html">
+                    <h6 class="title_white">SPECIALE ENOGASTRONOMIA</h6>
+                    <div class="center"><h2 class="title_white_opacity">BUON</h2>
+                        <h2 class="title_white">GUSTO</h2></div>
+                </a>
             </div>
-            <article>
-              <span>TitoloNews</span>
-              <h2>Ciao</h2>
-            </article>
-          </a>
+            <div class="news_block">
+                <div class="news_colomn_twin">
+                    <div>
+                        <img src="https://placehold.co/481x270/png">
+                        <a href="news/news1.html">
+                            <article>
+                                <span class="normal_span">Vestibulum quis</span>
+                                <h2 class="normal_h2">Titolo</h2>
+                                <span class="autore">autore</span>
+                            </article>
+                        </a>
+                        <div class="link_secondario">
+                            <span style="color:#063A74;font-size:18px;">&#9687;</span>
+                            <a href="news/news12.html">&#171;Ci sono spiagge belle, poi c'è Cala Goloritzè&#187;: lo
+                                spot della Sardegna è sul New York Times</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_colomn_twin">
+                    <div>
+                        <a href="news/news1.html">
+                            <div class="news_button_pad text_left bordobasso_scuro">
+                                <div><img src="https://placehold.co/236x133/png"></div>
+                                <article>
+                                    <span class="normal_span">caccio</span>
+                                    <h2 class="normal_h2">devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
+                                    <span class="autore">autore</span>
+                                </article>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="news/news1.html">
+                            <div class="news_button_pad text_left bordobasso_scuro">
+                                <div><img src="https://placehold.co/236x133/png"></div>
+                                <article>
+                                    <span class="normal_span">caccio</span>
+                                    <h2 class="normal_h2">devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
+                                    <span class="autore">autore</span>
+                                </article>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="news/news1.html">
+                            <div class="text_left">
+                                <div><img src="https://placehold.co/236x133/png"></div>
+                                <article>
+                                    <span class="normal_span">caccio</span>
+                                    <h2 class="normal_h2">devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
+                                    <span class="autore">autore</span>
+                                </article>
+                            </div>
+                        </a>
+                        <div class="link_secondario">
+                            <span style="color:#063A74;font-size:18px;">&#9687;</span>
+                            <a href="news/news12.html">&#171;Ci sono spiagge belle, poi c'è Cala Goloritzè&#187;: lo
+                                spot della Sardegna è sul New York Times</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="news_slide_single">
-          <a href="news/news1.html">
+    </section>
+
+    <section id="Iniziative">
+        <h5>Le nostre iniziative</h5>
+        <div class="little_news">
+            <div class="little_news_list">
+                <a href="news/news1.html">
+                    <div>
+                        <img src="https://placehold.co/228x128/png">
+                    </div>
+                    <article>
+                        <span class="normal_span">Etiam convallis</span>
+                        <h2 class="normal_h2">Nulla gravida nulla </h2>
+                    </article>
+                </a>
+                <a href="news/news1.html">
+                    <div>
+                        <img src="https://placehold.co/228x128/png">
+                    </div>
+                    <article>
+                        <span class="normal_span">Nam pharetra</span>
+                        <h2 class="normal_h2">Quisque rutrum risus turpis</h2>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="Misto" class="bordobasso_scuro">
+        <div class="left"> <!-- da correggere-->
+            <section id="INTERVISTE" class="bordobasso_scuro">
+                <div class="clear-box">
+                    <div>
+                        <a class="blue_box" href="news/news1.html">
+                            <h6 class="title_white">A TU PER TU - LA MIA SARDEGNA - LE INTERVISTE</h6>
+                            <div class="center"><h2 class="title_white_opacity">STORIE</h2>
+                                <h2 class="title_white">PERSONAGGI</h2></div>
+                        </a>
+                    </div>
+                    <div class="news_block">
+                        <div class="PPNgrande">
+                            <div>
+                                <img src="https://placehold.co/426x240/png">
+                                <a href="news/news1.html">
+                                    <article>
+                                        <span class="normal_span">Ut metus</span>
+                                        <h2 class="normal_h2">Titolo</h2>
+                                        <span class="autore">autore</span>
+                                    </article>
+                                </a>
+                                <div class="link_secondario">
+                                    <span style="color:#063A74;font-size:18px;">&#9687;</span>
+                                    <a href="news/news12.html">&#171;Ci sono spiagge belle, poi c'è Cala Goloritzè&#187;:
+                                        lo spot della Sardegna è sul New York Times</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="PPNpiccolo">
+                            <a href="news/news1.html">
+                                <div>
+                                    <img src="https://placehold.co/228x128/png">
+                                </div>
+                                <article>
+                                    <span class="normal_span">caccio</span>
+                                    <h2 class="normal_h2">devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
+                                    <span class="autore">autore</span>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="news_slide">
+                <div>
+                    <div><img src="https://placehold.co/201x113/png"></div>
+                    <div><h6>TitoloNews</h6>
+                        <p>Nam pellentesque dolor quis tincidunt pellentesque. Nulla pretium velit in interdum pharetra. Proin scelerisque congue lacus, sed eleifend eros pulvinar id</p></div>
+                </div>
+                <div>
+                    <div><img src="https://placehold.co/201x113/png"></div>
+                    <div><h6>TitoloNews</h6>
+                        <p>Integer egestas nisi a arcu varius, nec aliquet augue efficitur. Phasellus interdum posuere risus finibus convallis. Nunc nunc mauris, molestie quis porttitor in, viverra vel sem. Sed eu varius risus. Curabitur magna neque, semper eget elit ut, varius malesuada diam. </p></div>
+                </div>
+                <div>
+                    <div><img src="https://placehold.co/201x113/png"></div>
+                    <div><h6>TitoloNews</h6>
+                        <p>Vestibulum rutrum nisl in odio ullamcorper pharetra. Aliquam ullamcorper nunc quis porta euismod. Sed cursus, dui et hendrerit laoreet, velit justo efficitur lacus, maximus pellentesque sem diam ut velit.</p></div>
+                </div>
+
+            </div>
+            <div class="center">
+                <ul class="bottoni-linea">
+                    <li class="slick-active">
+                        <button>1<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>2<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>3<!-- --></button>
+                    </li>
+                </ul>
+            </div>
+            <img src="https://placehold.co/633x240/png">
+        </div>
+
+
+        <div class="right">
+            <div class="borded">
+                <div class="bordobasso_chiaro"><h5>TitoloNews</h5></div>
+                <div class="bordobasso_chiaro"><h2>Ut condimentum urna in lorem iaculis rutrum. Donec non facilisis augue, molestie mollis nunc. Duis semper ac tortor vitae egestas. </h2></div>
+                <div class="bordobasso_chiaro"><h2>Suspendisse viverra elit quis sem fringilla euismod</h2></div>
+                <div><h2>In lobortis turpis non enim varius tincidunt</h2></div>
+            </div>
+
+            <div class="borded">
+                <div class="bordobasso_chiaro"><h5>TitoloNews</h5></div>
+                <div class="bordobasso_chiaro"><h2>Etiam dictum, mi eu dignissim varius, augue risus imperdiet ligula, id tincidunt sapien ante sed lectus</h2></div>
+                <div class="bordobasso_chiaro"><h2>Praesent est tellus, vulputate in pretium aliquam, faucibus ut sem. </h2></div>
+                <div><h2>Suspendisse vehicula fermentum mauris, eu sodales tellus accumsan vel</h2></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="SaniBelli" class="bordobasso_scuro">
+        <div class="clear-box">
             <div>
-              <img src="image/228x128.png" width="318" height="179">
+                <a class="blue_box" href="news/news1.html">
+                    <h6 class="title_white">SANI E BELLI - LO SPECIALE</h6>
+                    <div class="center"><h2 class="title_white_opacity">SANI</h2>
+                        <h2 class="title_white">E</h2>
+                        <h2 class="title_white_opacity">BELLI</h2></div>
+                </a>
             </div>
-            <article>
-              <span>TitoloNews</span>
-              <h2>Ciao</h2>
-            </article>
-          </a>
-        </div>
-        <div class="news_slide_single">
-          <a href="news/news1.html">
-            <div>
-              <img src="image/228x128.png" width="318" height="179">
+            <div class="news_slide">
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <div>
+                            <img src="https://placehold.co/318x179/png">
+                        </div>
+                        <article>
+                            <span class="normal_span">TitoloNews</span>
+                            <h2 class="normal_h2">Quisque at dolor blandit, commodo justo in, vestibulum arcu.</h2>
+                        </article>
+                    </a>
+                </div>
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <div>
+                            <img src="https://placehold.co/318x179/png">
+                        </div>
+                        <article>
+                            <span class="normal_span">TitoloNews</span>
+                            <h2 class="normal_h2">Phasellus placerat et turpis non placerat. Nam gravida purus enim, ut elementum odio dignissim nec.</h2>
+                        </article>
+                    </a>
+                </div>
+                <div class="news_slide_single">
+                    <a href="news/news1.html">
+                        <div>
+                            <img src="https://placehold.co/318x179/png">
+                        </div>
+                        <article>
+                            <span class="normal_span">TitoloNews</span>
+                            <h2 class="normal_h2">Donec commodo, diam vel efficitur laoreet, dolor est faucibus neque, eu malesuada ipsum quam id nulla. In tristique dictum eros quis commodo</h2>
+                        </article>
+                    </a>
+                </div>
             </div>
-            <article>
-              <span>TitoloNews</span>
-              <h2>Ciao</h2>
-            </article>
-          </a>
         </div>
-      </div>
-      <div class="news_slide">
-        <div class="news_slide_single">
-          <a href="news/news1.html">
-            <div>
-              <img src="image/228x128.png" width="318" height="179">
-            </div>
-            <article>
-              <span>TitoloNews</span>
-              <h2>Ciao</h2>
-            </article>
-          </a>
-        </div>
-        <div class="news_slide_single">
-          <a href="news/news1.html">
-            <div>
-              <img src="image/228x128.png" width="318" height="179">
-            </div>
-            <article>
-              <span>TitoloNews</span>
-              <h2>Ciao</h2>
-            </article>
-          </a>
-        </div>
-        <div class="news_slide_single">
-          <a href="news/news1.html">
-            <div>
-              <img src="image/228x128.png" width="318" height="179">
-            </div>
-            <article>
-              <span>TitoloNews</span>
-              <h2>Ciao</h2>
-            </article>
-          </a>
-        </div>
-      </div>
-      <div class="white_button">
-        <button> minchia</button>
-      </div>
     </div>
-  </section>
-
-  <section id="Economia" class="bordobasso_scuro">
-    <div class="clear-block">
-      <div>
-        <a class="blue_box" href="news/news1.html">
-          <h6 class="title_white">SPECIALE ECONOMIA</h6>
-          <div class="center"><h2 class="title_white_opacity">Economia</h2><h2 class="title_white">-</h2><h2 class="title_white_opacity">Top1000</h2></div>
-        </a>
-      </div>
-      <div class="news_block">
-        <div class="news_colomn_twin">
-          <div>
-            <img src="image/228x128.png" width="481" height="270">
-            <a href="news/news1.html">
-              <article>
-                <span>Sopratitolo</span>
-                <h2>Titolo</h2>
-              </article>
-            </a>
-            <div class="link_secondario">
-              <span style="color:#063A74;font-size:18px;">&#9687;</span>
-              <a href="news/news12.html">&#171;Ci sono spiagge belle, poi c'è Cala Goloritzè&#187;: lo spot della Sardegna è sul New York Times</a>
-            </div>
-          </div>
-        </div>
-        <div class="news_colomn_twin">
-          <div>
-            <a href="news/news1.html">
-              <div class="text_left bordobasso_scuro">
-                <div><img src="image/228x128.png" width="236" height="133"></div>
-                <article>
-                  <span>caccio</span>
-                  <h2>devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
-                </article>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a href="news/news1.html">
-              <div class="text_left bordobasso_scuro">
-                <div><img src="image/228x128.png" width="236" height="133"></div>
-                <article>
-                  <span>caccio</span>
-                  <h2>devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
-                </article>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a href="news/news1.html">
-              <div class="text_left">
-                <div><img src="image/228x128.png" width="236" height="133"></div>
-                <article>
-                  <span>caccio</span>
-                  <h2>devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
-                </article>
-              </div>
-            </a>
-            <div class="link_secondario">
-              <span style="color:#063A74;font-size:18px;">&#9687;</span>
-              <a href="news/news12.html">&#171;Ci sono spiagge belle, poi c'è Cala Goloritzè&#187;: lo spot della Sardegna è sul New York Times</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div></div>
-  </section>
-
-  <section id="UltimiVideo">
-    <div>
-      <div class="circle white center">
-        <img src="image/webcam_logo.png" width="22" height="22"/>
-      </div>
-      <h4 class="center">Ultimi video</h4>
-      <div class="last_video bordobasso">
-        <a href="news/news1.html">
-          <div>
-            <img src="image/228x128.png" width="228" height="128">
-          </div>
-          <article>
-            <span>TitoloNews</span>
-            <h2>Ciao</h2>
-          </article>
-        </a>
-        <a href="news/news1.html">
-          <div>
-            <img src="image/228x128.png" width="228" height="128">
-          </div>
-          <article>
-            <span>TitoloNews</span>
-            <h2>Ciao</h2>
-          </article>
-        </a>
-        <a href="news/news1.html">
-          <div>
-            <img src="image/228x128.png" width="228" height="128">
-          </div>
-          <article>
-            <span>TitoloNews</span>
-            <h2>Ciao</h2>
-          </article>
-        </a>
-        <a href="news/news1.html">
-          <div>
-            <img src="image/228x128.png" width="228" height="128">
-          </div>
-          <article>
-            <span>TitoloNews</span>
-            <h2>Ciao</h2>
-          </article>
-        </a>
-      </div>
-      <div class ="center">
-        <ul class="bottoni-linea">
-          <li class="slick-active"><button>1<!-- --></button></li>
-          <li class=""><button>2<!-- --></button></li>
-          <li class=""><button>3<!-- --></button></li>
-          <li class=""><button>4<!-- --></button></li>
-          <li class=""><button>5<!-- --></button></li>
-          <li class=""><button>6<!-- --></button></li>
-          <li class=""><button>7<!-- --></button></li>
-          <li class=""><button>8<!-- --></button></li>
-        </ul>
-      </div>
-      <div class="center white_button"><button>VEDI TUTTI&#10093;</button></div>
-    </div>
-  </section>
-
-  <section id="SpecEnog" class="bordobasso_scuro">
-    <div class="clear-box">
-      <div>
-        <a class="blue_box" href="news/news1.html">
-            <h6 class="title_white">BUON GUSTO</h6>
-          <div class="center"><h2 class="title_white_opacity">BUON</h2><h2 class="title_white">GUSTO</h2></div>
-        </a>
-      </div>
-      <div class="news_block">
-        <div class="news_colomn_twin">
-          <div>
-            <img src="image/228x128.png" width="481" height="270">
-            <a href="news/news1.html">
-              <article>
-                <span>Sopratitolo</span>
-                <h2>Titolo</h2>
-                <span class="autore">autore</span>
-              </article>
-            </a>
-            <div class="link_secondario">
-              <span style="color:#063A74;font-size:18px;">&#9687;</span>
-              <a href="news/news12.html">&#171;Ci sono spiagge belle, poi c'è Cala Goloritzè&#187;: lo spot della Sardegna è sul New York Times</a>
-            </div>
-          </div>
-        </div>
-        <div class="news_colomn_twin">
-          <div>
-            <a href="news/news1.html">
-              <div class="text_left bordobasso_scuro">
-                <div><img src="image/228x128.png" width="236" height="133"></div>
-                <article>
-                  <span>caccio</span>
-                  <h2>devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
-                  <span class="autore">autore</span>
-                </article>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a href="news/news1.html">
-              <div class="text_left bordobasso_scuro">
-                <div><img src="image/228x128.png" width="236" height="133"></div>
-                <article>
-                  <span>caccio</span>
-                  <h2>devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
-                  <span class="autore">autore</span>
-                </article>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a href="news/news1.html">
-              <div class="text_left">
-                <div><img src="image/228x128.png" width="236" height="133"></div>
-                <article>
-                  <span>caccio</span>
-                  <h2>devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
-                  <span class="autore">autore</span>
-                </article>
-              </div>
-            </a>
-            <div class="link_secondario">
-              <span style="color:#063A74;font-size:18px;">&#9687;</span>
-              <a href="news/news12.html">&#171;Ci sono spiagge belle, poi c'è Cala Goloritzè&#187;: lo spot della Sardegna è sul New York Times</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="Iniziative">
-    <div class="black bordobasso clear-box">
-      <h4>Le nostre iniziative</h4>
-      <div class="left-box box bordobasso">
-        <div><div><img src="image/228x128.png" width="318" height="179"></div><div><h6>TitoloNews</h6><p>Ciao</p></div></div>
-        <div><div><img src="image/228x128.png" width="318" height="179"></div><div><h6>TitoloNews</h6><p>Ciao</p></div></div>
-      </div>
-    </div>
-  </section>
-
-
-  <div class="white bordobasso margin4">
-    <div class="left long box"> <!-- da correggere-->
-      <div class="blue bordobasso">
-        <h6 class="economia">A TU PER TU - LA MIA SARDEGNA - LE INTERVISTE</h6>
-        <div class="economia"><h2>Buon</h2><h2>Gusto</h2></div>
-      </div>
-      <div class="white clear-box little_news box">
-        <h5>Primo Piano</h5>
-        <div class="left bigsmall">
-          <div><img src="image/228x128.png" width="426" height="240"></div>
-          <div>bao</div>
-        </div>
-        <div class="right smallsmall">
-          <img src="image/228x128.png" width="210" height="118">
-          <div>
-            <h6>TitoloNews</h6>
-            <p>Ciao</p>
-          </div>
-          <div class="bottom_line bordobasso"></div>
-          <div>
-            <h6>TitoloNews</h6>
-            <p>Ciao</p>
-          </div>
-          <div class="bottom_line bordobasso"></div>
-          <div>
-            <h6>TitoloNews</h6>
-            <p>Ciao</p>
-          </div>
-          <div class="bottom_line bordobasso"></div>
-        </div>
-
-      </div>
-      <div class="left-box">
-        <div><div><img src="image/228x128.png" width="201" height="113"></div><div><h6>TitoloNews</h6><p>Ciao</p></div></div>
-        <div><div><img src="image/228x128.png" width="201" height="113"></div><div><h6>TitoloNews</h6><p>Ciao</p></div></div>
-        <div><div><img src="image/228x128.png" width="201" height="113"></div><div><h6>TitoloNews</h6><p>Ciao</p></div></div>
-
-      </div>
-      <div class ="center">
-        <ul class="bottoni-linea">
-          <li class="slick-active"><button>1<!-- --></button></li>
-          <li class=""><button>2<!-- --></button></li>
-          <li class=""><button>3<!-- --></button></li>
-          <li class=""><button>4<!-- --></button></li>
-          <li class=""><button>5<!-- --></button></li>
-          <li class=""><button>6<!-- --></button></li>
-          <li class=""><button>7<!-- --></button></li>
-          <li class=""><button>8<!-- --></button></li>
-        </ul>
-      </div>
-      <img src="image/228x128.png" width="633" height="240">
-    </div>
-
-
-    <div class="right smallL box gray">
-      <div class="borded margin4">
-        <div class="bordobasso"><h6>TitoloNews</h6></div>
-        <div class="bordobasso"><p>Ciao</p></div>
-        <div class="bordobasso"><p>Ciao</p></div>
-        <div><p>Ciao</p></div>
-      </div>
-
-      <div class="borded">
-        <div class="bordobasso"><h6>TitoloNews</h6></div>
-        <div class="bordobasso"><p>Ciao</p></div>
-        <div class="bordobasso"><p>Ciao</p></div>
-        <div><p>Ciao</p></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bordobasso clear-box">
-    <div class="blue bordobasso">
-      <h6 class="economia">Sani e Bello - Lo Speciale</h6>
-      <div class="economia"><h2>SANI</h2><h2>E</h2><h2>BELLI</h2></div>
-    </div>
-    <div class="left-box box bordobasso">
-      <div><div><img src="image/228x128.png" width="318" height="179"></div><div><h6>TitoloNews</h6><p>Ciao</p></div></div>
-      <div><div><img src="image/228x128.png" width="318" height="179"></div><div><h6>TitoloNews</h6><p>Ciao</p></div></div>
-      <div><div><img src="image/228x128.png" width="318" height="179"></div><div><h6>TitoloNews</h6><p>Ciao</p></div></div>
-
-    </div>
-  </div>
-
-</div>
-
+</main>
 
 <footer>
-  <div>
-    <ul class="header">
-      <li><a href="#home" class="active"><img src="image/whatsapp_logo.png" alt="whatsapp" width="20" height="20" ></a></li>
-      <li><a href="#news"><img src="image/instagram_logo.png" alt="whatsapp" width="20" height="20" ></a></li>
-      <li><a href="#contact"><img src="image/x_logo.png" alt="whatsapp" width="20" height="20" ></a></li>
-      <li><a href="#about"><img src="image/facebook_logo.png" alt="whatsapp" width="20" height="20" ></a></li>
-      <li><a href="#about"><img src="image/sito_logo.png" alt="whatsapp" width="197" height="39" ></a></li>
-    </ul>
-  </div>
+    <div class="footer_block">
+        <div class="social_big">
+            <div class="left">
+                <div><a href="https://www.lanuovasardegna.it/"><img src="https://placehold.co/200x50/png"
+                                                                    alt="whatsapp"></a></div>
+            </div>
+            <div class="social">
+                <div><a href="#about"><img src="image/facebook_logo.png" alt="whatsapp" width="23,8px"
+                                           height="24px"></a></div>
+                <div class="left-margin"><a href="#contact"><img src="image/x_logo.png" alt="whatsapp" width="24px"
+                                                                 height="24px"></a></div>
+                <div class="left-margin"><a href="#news"><img src="image/instagram_logo.png" alt="whatsapp" width="24px"
+                                                              height="24px"></a></div>
+                <div class="left-margin"><a href="#home" class="active"><img src="image/whatsapp_logo.png"
+                                                                             alt="whatsapp" width="24px" height="24px"></a>
+                </div>
+            </div>
+        </div>
 
-  <div class="edition">
-    <h6 class="center">SCEGLI L'EDIZIONE</h6>
-    <ul>
-      <li><a href="#menu" class="active" >Sassari</a></li>
-      <li><a href="#sardegna">Alghero</a></li>
-      <li><a href="#italia_mondo">Cagliari</a></li>
-      <li><a href="#sport">Nuoro</a></li>
-      <li><a href="#tempo_libero" class="active">Olbia</a></li>
-      <li><a href="#video" class="active">Oristano</a></li>
-    </ul>
-  </div>
-  <div class="clear-box">
-    <div class="left"><img src="image/sae_logo.png" width="87" height="75"></div>
-  </div>
-  <div class="blue clear-box">
-    <p>Sae Sardegna SpA – sede legale Zona industriale Predda Niedda strada 31 , 07100 Sassari, - Capitale sociale Euro 6.000.000 – R.E.A. SS – 213461 – Registro Imprese di Sassari 02328540683 – CF e Partita IVA 02328540683</p>
-    <hr>
-    <p>I diritti delle immagini e dei testi sono riservati. È espressamente vietata la loro riproduzione con qualsiasi mezzo e l'adattamento totale o parziale.</p>
-  </div>
+        <div class="edition bordobasso_scuro">
+            <ul>
+                <li><a href="#menu_bar" class="active">Redazione</a></li>
+                <li><a href="#sardegna">Scriveteci</a></li>
+                <li><a href="#italia_mondo">Pubblicità</a></li>
+                <li><a href="#sport">Privacy</a></li>
+                <li><a href="#tempo_libero" class="active">Codice Etico e Modello 231</a></li>
+                <li><a href="#video" class="active">Cockie policy</a></li>
+                <li><a href="#video" class="active">Termini e condizioni</a></li>
+            </ul>
+        </div>
+        <div class="clear-box">
+            <div><img src="https://placehold.co/87x75/png"></div>
+        </div>
+    </div>
+    <div class="blue">
+        <p>Sae Sardegna SpA – sede legale Zona industriale Predda Niedda strada 31 , 07100 Sassari, - Capitale sociale
+            Euro 6.000.000 – R.E.A. SS – 213461 – Registro Imprese di Sassari 02328540683 – CF e Partita IVA
+            02328540683</p>
+        <hr>
+        <p>I diritti delle immagini e dei testi sono riservati. È espressamente vietata la loro riproduzione con
+            qualsiasi mezzo e l'adattamento totale o parziale.</p>
+    </div>
 </footer>
 
 </body>
