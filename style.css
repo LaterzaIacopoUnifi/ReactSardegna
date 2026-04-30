@@ -27,6 +27,7 @@ span {
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 header {
@@ -34,7 +35,7 @@ header {
     margin: 0 auto;
 }
 
-#width_page {
+.width_page {
     max-width: 990px;
     margin: 0 auto;
     padding: 8px;
@@ -55,12 +56,10 @@ header {
     justify-content: flex-end;
     align-items: center;
     margin: 0;
-    padding: 0;
     padding-right: 8px;
     overflow: hidden;
     background-color: white;
     height: 44px;
-
 }
 
 .social a {
@@ -86,7 +85,6 @@ header {
 
 #logo-grid img {
     margin-right: 8px;
-
 }
 
 #logo-grid p {
@@ -128,17 +126,6 @@ header {
     padding: 8px 6px;
 }
 
-#left_menu, #middle_menu, #right_menu {
-    float: none;
-}
-
-#menu_bar ul {
-    list-style-type: none;
-    align-items: center;
-    display: flex;
-    margin: 0;
-}
-
 #menu_bar a {
     display: flex;
     justify-content: space-between;
@@ -174,10 +161,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-}
-
-.edition a {
-    color: black;
 }
 
 .video {
@@ -216,7 +199,6 @@ header {
     margin-top: 4px;
     font-size: 1rem;
     text-align: left;
-    font-weight: bold;
 }
 
 #PrimoPianoNews {
@@ -276,8 +258,6 @@ header {
     width: 100%;
     margin-block-start: 0;
     margin-block-end: 0;
-
-
 }
 
 .PPNpiccolo {
@@ -293,28 +273,18 @@ header {
     padding-right: 0;
     padding-left: 6px;
     float: right;
+    border-bottom: 1px solid;
+    border-color: #CBCFD3;
 }
 
 .PPNpiccolo a {
     margin: 0;
-    font-family: PoynterOldstyleDisplay, serif;
-    display: flex;
-    border-radius: 0;
-    flex-direction: column;
-    color: black;
-    font-weight: 400;
-    font-size: 1rem;
     padding-bottom: 12px;
-    border-bottom: 1px solid;
-    border-color: #CBCFD3;
     max-width: 100%;
 }
 
-.PPNpiccolo a h2 {
+.PPNpiccolo a h2 {   /*da cambiare*/
     margin-top: 4px;
-    text-align: left;
-    line-height: 1.2;
-    font-family: PoynterOldstyleDisplay-NarBold, serif !important;
 }
 
 .news_small {
@@ -338,11 +308,6 @@ header {
     flex-direction: row;
 }
 
-.bottom_line {
-    border-bottom: 1px solid;
-    border-color: #CBCFD3;
-}
-
 .news_slide {
     display: flex;
     justify-content: space-between;
@@ -364,30 +329,14 @@ header {
 
 .news_slide_single a {
     margin: 0;
-    font-family: PoynterOldstyleDisplay, serif;
-    display: flex;
     border-radius: 0;
-    height: 100%;
-    flex-direction: column;
-    color: black;
-    font-weight: 400;
-    font-size: 1rem;
     padding-bottom: 12px;
     border: 0;
     line-height: 1;
 }
 
-.news_slide_single h2 {
+.news_slide_single h2 { /*da cambiare*/
     margin-top: 4px;
-    font-size: 1.25rem;
-    text-align: left;
-    line-height: 1.2;
-}
-
-.news_slide_single span {
-    font-size: 1.1429rem;
-    text-align: left;
-    line-height: 1.25;
 }
 
 #Network {
@@ -520,7 +469,6 @@ header {
 }
 
 #Evidenza a {
-    color: black;
     flex-basis: 50%;
     flex-grow: 0;
     max-width: 100%;
@@ -529,6 +477,23 @@ header {
     padding-bottom: 12px;
     padding-right: 6px;
     padding-left: 0;
+}
+
+section.smaller a{ /* da modificare */
+    flex-basis: 50%;
+    flex-grow: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 12px;
+    padding-right: 6px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+section.smaller a article{
+    margin-left: 11px;
 }
 
 .greater {
@@ -590,7 +555,6 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 48px;
-    border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: #CBCFD3;
 }
@@ -616,20 +580,16 @@ header {
 }
 
 .side section {
-    margin: 0;
     margin-top: 8px;
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: #e6e6e6;
-    border-top: 1px solid;
-    border-color: #CBCFD3;
     padding-top: 4px;
-    padding-bottom: 3.2px;
+    padding-bottom: 3px;
 }
 
 .side div.news_colomn {
-    margin: 0;
     margin-top: 4px;
     padding: 8px;
     width: 100%;
@@ -642,12 +602,6 @@ header {
     padding-bottom: 12px;
     margin-bottom: 16px;
     line-height: 1.2;
-}
-
-
-.side div.news_colomn div.bordobasso_chiaro {
-    border-bottom: 1px solid;
-    border-color: #CBCFD3;
 }
 
 .red_button {
@@ -689,6 +643,14 @@ div.red_button button {
     color: #063A74;
 }
 
+#Sport{
+    border-color: #8c8e91;
+}
+
+#ItaliaMondo, #Economia, #SpecEnog{
+    border-color: #CBCFD3;
+}
+
 #Sport, #ItaliaMondo, #Economia {
     display: flex;
     flex-direction: column;
@@ -696,14 +658,12 @@ div.red_button button {
     background-color: white;
     margin-top: 4px;
     border-bottom: 1px solid;
-    border-color: #8c8e91;
     box-sizing: border-box;
     line-height: 1.2;
 }
 
 .news_block {
     width: 100%;
-    margin: 0;
     margin-top: 4px;
     box-sizing: border-box;
     display: flex;
@@ -742,7 +702,6 @@ div.red_button button {
 div.news_colomn_twin a {
     display: flex;
     flex-direction: column;
-    background-color: inherit;
     border-radius: 0;
     padding: 0;
     border: 0;
@@ -817,11 +776,11 @@ div.news_colomn_twin a {
     align-items: center;
 }
 
-
 .title_white {
     color: white;
     margin: 0;
 }
+
 
 .title_white_opacity {
     color: white;
@@ -839,7 +798,6 @@ h2.title_white, h2.title_white_opacity {
     font-size: 2.90rem;
     font-weight: 400;
     text-align: center;
-
 }
 
 .center {
@@ -847,11 +805,6 @@ h2.title_white, h2.title_white_opacity {
     flex-direction: row;
     justify-content: center;
     margin-top: 4px;
-}
-
-.ad {
-    width: 974px;
-    height: 509px;
 }
 
 #UltimiVideo {
@@ -870,25 +823,17 @@ h2.title_white, h2.title_white_opacity {
 
 #UltimiVideo h4 {
     font-size: 1.4993rem;
-    color: white;
-}
-
-#UltimiVideo button {
-    color: white;
 }
 
 #UltimiVideo article {
     margin-top: 8px;
 }
 
-#UltimiVideo span {
-    font-size: 1.1429rem;
+#UltimiVideo button{
     color: white;
-    line-height: 1.25;
 }
 
 #UltimiVideo h2 {
-    font-size: 1.25rem;
     color: white;
     margin-top: 4px;
 }
@@ -898,45 +843,107 @@ h2.title_white, h2.title_white_opacity {
     display: flex;
     justify-content: space-between;
     padding: 0 6px;
-    width: 974px;
+    position: relative;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+}
+
+.last_video a {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    padding: 8px;
+}
+
+.circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    bottom: 16px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#SpecEnog{
+    border-bottom: 1px solid;
+}
+
+#Iniziative{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 4px;
+    line-height: 1.2;
+    border-bottom: 1px solid;
+    border-color: #8c8e91;
 }
 
 .little_news {
-    width: 100%;
+    max-width: 66%;
     margin-top: 4px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    border-bottom: 1px solid;
-    border-color: #8c8e91;
+
     margin-bottom: 4px;
     padding-bottom: 4px;
 }
+
+.little_news_left{
+    flex-basis: 33%;
+    flex-grow: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 12px;
+    padding-right: 6px;
+    padding-left: 0;
+}
+
+.little_news_right {
+    flex-basis: 33%;
+    flex-grow: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 12px;
+    padding-right: 0;
+    padding-left: 6px;
+}
+
 
 .little_news_list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 0 6px;
     max-width: 100%;
     flex-basis: 100%;
     line-height: 1.2;
     margin-top: 4px;
     width: 66%;
+    flex-grow: 0;
+    box-sizing: border-box;
+
 }
 
 div.little_news_list a {
     display: flex;
     flex-direction: column;
-    background-color: inherit;
     border-radius: 0;
     padding: 0;
     border: 0;
-    flex-basis: 33.333333%;
+    flex-basis: 33%;
     flex-grow: 0;
-    max-width: 33.333333%;
+    max-width: 100%;
 }
 
 #Misto {
@@ -964,30 +971,79 @@ div.little_news_list a {
     width: 33%;
     align-items: center;
     margin-left: 16px;
+    line-height: 1.2;
+}
+
+.news_block_interv {
+    width: 100%;
+    margin-top: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.news_block_interv_left {
+    flex-grow: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 0;
+    flex-direction: row;
+    flex-basis: 66.666667%;
+    max-width: 66.666667%;
+    padding-right: 6px;
+    padding-left: 0;
+    padding-bottom: 12px;
+}
+
+.news_block_interv_right {
+    flex-grow: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    flex-direction: row;
+    flex-basis: 33%;
+    max-width: 33%;
+    padding-right: 0;
+    padding-left: 6px;
+}
+
+.news_block_interv_right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#INTERVISTE{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4px;
+    line-height: 1.2;
+}
+
+.borded {
+    width: 100%;
+    margin-bottom: 4px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
 }
 
 .borded h5 {
     text-align: right;
     color: #063A74;
     font-size: 1.4993rem;
-    margin: 0;
-    font-weight: 400;
-    line-height: 1.334;
-    font-family: PoynterOldstyleDisplay-NarBold, serif;
     padding: 8px;
 }
 
 .borded h2 {
-    font-size: 1.1429rem;
-    text-align: left;
-    line-height: 1.2;
-}
-
-.borded {
-    width: 100%;
-    border: 1px solid black;
-    margin-bottom: 4px;
-
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 footer {
@@ -1026,25 +1082,6 @@ footer div.blue {
 
 .clear-box {
     display: flow-root;
-}
-
-.red_background {
-    background-color: #921421;
-    color: white;
-}
-
-.circle {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    bottom: 16px;
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-    border-radius: 50px;
-    background-color: white;
 }
 
 .bottom-box {
