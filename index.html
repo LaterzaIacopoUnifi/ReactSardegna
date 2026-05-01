@@ -4,24 +4,38 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media='all' href="style.css">
+    <!--    <link rel='stylesheet' media='print' href='print.css' />-->
+
     <title>React App</title>
 </head>
 
 
 <body>
-<header >
-    <div id="Social" class="social bordobasso_chiaro">
-        <div><a href="https://www.facebook.com"><img src="image/facebook_logo.png" alt="facebook" width="23,8px" height="24px"></a></div>
-        <div class="left-margin"><a href="https://www.x.com"><img src="image/x_logo.png" alt="x" width="24px" height="24px"></a></div>
-        <div class="left-margin"><a href="https://www.instagram.com/"><img src="image/instagram_logo.png" alt="instagram" width="24px" height="24px"></a></div>
-        <div class="left-margin"><a href="https://www.whatsapp.com/" class="active"><img src="image/whatsapp_logo.png" alt="whatsapp" width="24px" height="24px"></a></div>
+
+<header>
+    <div class="red_button"><button class="left">ABBONATI</button></div>
+    <div id="Social" class="social bordobasso_chiaro media_long">
+        <div><a href="https://www.facebook.com"><img src="image/facebook_logo.png" alt="facebook" width="23,8px"
+                                                     height="24px"></a></div>
+        <div class="left-margin"><a href="https://www.x.com"><img src="image/x_logo.png" alt="x" width="24px"
+                                                                  height="24px"></a></div>
+        <div class="left-margin"><a href="https://www.instagram.com/"><img src="image/instagram_logo.png"
+                                                                           alt="instagram" width="24px"
+                                                                           height="24px"></a></div>
+        <div class="left-margin"><a href="https://www.whatsapp.com/" class="active"><img src="image/whatsapp_logo.png"
+                                                                                         alt="whatsapp" width="24px"
+                                                                                         height="24px"></a></div>
     </div>
 
     <div id="logo-grid">
         <div>
-            <a>
-                <img src="image/newspaper_logo.png" alt="Quotidiano" width="20" height="20" >
+            <a href="#menu" class="menu">
+                <img src="image/menu_black.png" alt="Menu" width="20" height="20">
+                MENU
+            </a>
+            <a class="media_long">
+                <img src="image/newspaper_logo.png" alt="Quotidiano" width="20" height="20">
                 Sfoglia il quotidiano
             </a>
         </div>
@@ -33,16 +47,16 @@
             </a>
         </div>
         <div class="accedi-abbonati">
-            <div>
-                    <img src="image/user.png" width="16px" height="17px"  alt="La Nuova Sardegna">ACCEDI
-            </div>
-            <div class="red_button">
-                <button>ABBONATI</button>
+            <a>
+                <img src="image/user.png" width="16px" height="17px" alt="La Nuova Sardegna">ACCEDI
+            </a>
+            <div class="red_button media_long">
+                <button class="square_red_button">ABBONATI</button>
             </div>
         </div>
     </div>
 
-    <nav id="menu_bar">
+    <nav id="menu_bar" class="media_long">
         <ul id="left_menu">
             <li>
                 <a href="#menu">
@@ -69,7 +83,7 @@
         </ul>
     </nav>
 
-    <nav class="edition">
+    <nav class="edition media_long">
         <h6 class="center"> SCEGLI L'EDIZIONE</h6>
         <ul>
             <li><a href="https://www.lanuovasardegna.it/sassari/cronaca" class="active">Sassari</a></li>
@@ -81,9 +95,9 @@
         </ul>
     </nav>
 </header>
-<main class="width_page">
 
-    <section class="video">
+<main class="width_page">
+    <section class="video media_long">
         <h2>I video Del Giorno</h2> <!-- mettere tag a-->
         <div class="video_slide">
             <div>
@@ -94,21 +108,21 @@
                 </article>
             </div>
             <div>
-                <img src="https://placehold.co/228x120/png"alt="Notizia numero 2">
+                <img src="https://placehold.co/228x120/png" alt="Notizia numero 2">
                 <article>
                     <span>suscipit Integer </span>
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</h2>
                 </article>
             </div>
             <div>
-                <img src="https://placehold.co/228x120/png"alt="Notizia numero 3">
+                <img src="https://placehold.co/228x120/png" alt="Notizia numero 3">
                 <article>
                     <span>Intsuscipit eger </span>
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</h2>
                 </article>
             </div>
             <div>
-                <img src="https://placehold.co/228x120/png"alt="Notizia numero 4">
+                <img src="https://placehold.co/228x120/png" alt="Notizia numero 4">
                 <article>
                     <span>Int suscipitsuscipit</span>
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</h2>
@@ -122,7 +136,7 @@
             <h5>Primo Piano</h5>
             <div class="PPNgrande">
                 <a href="news/news1.html">
-                    <img src="https://placehold.co/644x362/png" alt="Notizia numero 5">
+                    <img src="https://placehold.co/1920x1080?text=Notizia+Principale" alt="Notizia numero 5">
                     <span class="normal_span">Cras a</span>
                     <h2>Quisque in felis mauris. Nulla convallis metus eros, vel luctus nunc varius et. Suspendisse at
                         arcu congue, eleifend lacus at, vehicula quam. Praesent efficitur. </h2>
@@ -131,7 +145,7 @@
             </div>
             <div class="PPNpiccolo">
                 <a href="news/news2.html">
-                    <img src="https://placehold.co/318x180/png" alt="Notizia Principale">
+                    <img src="https://placehold.co/1920x1080?text=Notizia+Secondaria" alt="Notizia Principale">
                     <article>
                         <span class="normal_span">Suspendisse imperdiet sem.</span>
                         <h2>Nam interdum tincidunt aliquet. Etiam sodales lobortis ipsum nec facilisis.
@@ -141,14 +155,16 @@
                 <a href="news/news2.html">
                     <article>
                         <span class="normal_span">Aenean accumsan pretium.</span>
-                        <h2 class="news_small">Vestibulum ac nunc faucibus, tincidunt tellus sit amet, suscipit elit. Integer laoreet
+                        <h2 class="news_small">Vestibulum ac nunc faucibus, tincidunt tellus sit amet, suscipit elit.
+                            Integer laoreet
                             ullamcorper. </h2>
                     </article>
                 </a>
                 <a href="news/news2.html">
                     <article>
                         <span class="normal_span">Cras pulvinar magna.</span>
-                        <h2  class="news_small">In sit amet urna nec leo laoreet ultrices. Curabitur rutrum erat vitae congue. </h2>
+                        <h2 class="news_small">In sit amet urna nec leo laoreet ultrices. Curabitur rutrum erat vitae
+                            congue. </h2>
                     </article>
                 </a>
             </div>
@@ -159,30 +175,33 @@
             <div class="news_slide bordobasso_scuro">
                 <div class="news_slide_single">
                     <a href="news/news1.html">
-                        <img src="https://placehold.co/318x180/png" alt="Piccola Notizia Principale 1">
+                        <img src="https://placehold.co/1920x1080?text=Lista+Notizia" alt="Piccola Notizia Principale 1">
                         <article>
                             <span>Vestibulum egestas</span>
-                            <h2 class="normal_h2">Aliquam sed dolor posuere, interdum ipsum nec, egestas arcu. Praesent ullamcorper
+                            <h2 class="normal_h2">Aliquam sed dolor posuere, interdum ipsum nec, egestas arcu. Praesent
+                                ullamcorper
                                 nisl.</h2>
                         </article>
                     </a>
                 </div>
                 <div class="news_slide_single">
                     <a href="news/news1.html">
-                        <img src="https://placehold.co/318x180/png" alt="Piccola Notizia Principale 2">
+                        <img src="https://placehold.co/1920x1080?text=Lista+Notizia" alt="Piccola Notizia Principale 2">
                         <article>
                             <span>Donec congue</span>
-                            <h2 class="normal_h2"> Vestibulum consectetur urna nisl, dictum mattis velit tincidunt eu. Sed aliquam
+                            <h2 class="normal_h2"> Vestibulum consectetur urna nisl, dictum mattis velit tincidunt eu.
+                                Sed aliquam
                                 turpis. </h2>
                         </article>
                     </a>
                 </div>
                 <div class="news_slide_single">
                     <a href="news/news1.html">
-                        <img src="https://placehold.co/318x180/png" alt="Piccola Notizia Principale 3">
+                        <img src="https://placehold.co/1920x1080?text=Lista+Notizia" alt="Piccola Notizia Principale 3">
                         <article>
                             <span>In venenatis</span>
-                            <h2 class="normal_h2">Vivamus efficitur orci in nulla auctor, ac ullamcorper erat molestie. Nam sed</h2>
+                            <h2 class="normal_h2">Vivamus efficitur orci in nulla auctor, ac ullamcorper erat molestie.
+                                Nam sed</h2>
                         </article>
                     </a>
                 </div>
@@ -191,27 +210,37 @@
     </section>
 
 
-    <div id="Network" class="black">
+    <div id="Network" class="black bordobasso_scuro">
         <h5>Network SAE</h5>
         <div class="network_slide">
-            <div class="network_slide_single">
+            <div class="network_slide_single media_long">
                 <a href="news/news1.html">
-                    <img src="https://placehold.co/290x77/png" alt="Notizia numero 6">
+                    <img src="https://placehold.co/290x77?text=Testata+Giornalistica-1" alt="Notizia numero 6">
                 </a>
             </div>
-            <div class="network_slide_single">
+            <div class="network_slide_single media_long">
                 <a href="news/news1.html">
-                    <img src="https://placehold.co/290x77/png" alt="Notizia numero 7">
+                    <img src="https://placehold.co/290x77?text=Testata+Giornalistica-2" alt="Notizia numero 7">
                 </a>
             </div>
-            <div class="network_slide_single">
+            <div class="network_slide_single media_long">
                 <a href="news/news1.html">
-                    <img src="https://placehold.co/290x77/png" alt="Notizia numero 8">
+                    <img src="https://placehold.co/290x77?text=Testata+Giornalistica-3" alt="Notizia numero 8">
+                </a>
+            </div>
+            <div class="network_slide_single media_short">
+                <a href="news/news1.html">
+                    <img src="https://placehold.co/300x80?text=Testata+Giornalistica-1" alt="Notizia numero 8">
+                </a>
+            </div>
+            <div class="network_slide_single media_short">
+                <a href="news/news1.html">
+                    <img src="https://placehold.co/300x80?text=Testata+Giornalistica-2" alt="Notizia numero 8">
                 </a>
             </div>
         </div>
 
-        <ul class="bordobasso_scuro">
+        <ul class="bottoni-linea">
             <li class="slick-active">
                 <button>1<!-- --></button>
             </li>
@@ -244,22 +273,73 @@
             <section class="smaller">
                 <h5>In evidenza</h5>
                 <a href="news/news1.html">
-                    <div><img src="https://placehold.co/316x178/png" alt="Notizia numero 9"></div>
-                    <article>
+                    <div class="equa_divisione"><img src="https://placehold.co/1920x1080?text=Notizia+in+Evidenza" alt="Notizia numero 9"></div>
+                    <article class="equa_divisione">
                         <span class="normal_span">Sed congue</span>
                         <h2 class="normal_h2">Integer a magna id odio commodo cursus. Aliquam ultricies neque enim</h2>
                         <span class="autore">Cras vestibulum tellus. </span>
                     </article>
                 </a>
             </section>
+
+            <div class="media_short bordobasso_scuro">
+                <section class="video">
+                    <h2>I video Del Giorno</h2> <!-- mettere tag a-->
+                    <div class="video_slide">
+                        <div>
+                            <img src="https://placehold.co/430x244/png" alt="Notizia numero 1">
+                            <article>
+                                <span>Integer suscipit</span>
+                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</h2>
+                            </article>
+                        </div>
+                        <div>
+                            <img src="https://placehold.co/430x244/png" alt="Notizia numero 2">
+                            <article>
+                                <span>suscipit Integer </span>
+                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque libero arcu, volutpat in</h2>
+                            </article>
+                        </div>
+                    </div>
+                    <ul class="bottoni-linea">
+                        <li class="slick-active">
+                            <button>1<!-- --></button>
+                        </li>
+                        <li class="">
+                            <button>2<!-- --></button>
+                        </li>
+                        <li class="">
+                            <button>3<!-- --></button>
+                        </li>
+                        <li class="">
+                            <button>4<!-- --></button>
+                        </li>
+                        <li class="">
+                            <button>5<!-- --></button>
+                        </li>
+                        <li class="">
+                            <button>6<!-- --></button>
+                        </li>
+                        <li class="">
+                            <button>7<!-- --></button>
+                        </li>
+                        <li class="">
+                            <button>8<!-- --></button>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
             <section class="greater">
                 <div class="news_colomn">
                     <div class="news_left">
                         <a href="news/news2.html">
-                            <div><img src="https://placehold.co/315x176/png" alt="Notizia numero 10"></div>
+                            <div><img src="https://placehold.co/1920x1080?text=Lista+Notizia+in+Evidenza" alt="Notizia numero 10"></div>
                             <article>
                                 <span class="normal_span">Orci varius</span>
-                                <h2 class="normal_h2">Cras finibus venenatis arcu sit amet iaculis. Cras sed accumsan nisi. Fusce
+                                <h2 class="normal_h2">Cras finibus venenatis arcu sit amet iaculis. Cras sed accumsan
+                                    nisi. Fusce
                                     porttitor enim cursus dignissim commodo. Donec at diam. </h2>
                                 <span class="autore">Proin aliquam</span>
                             </article>
@@ -268,10 +348,11 @@
 
                     <div class="news_right">
                         <a href="news/news2.html">
-                            <div><img src="https://placehold.co/315x176/png" alt="Notizia numero 11"></div>
+                            <div><img src="https://placehold.co/1920x1080?text=Lista+Notizia+in+Evidenza" alt="Notizia numero 11"></div>
                             <article>
                                 <span class="normal_span">Aenean bibendum</span>
-                                <h2 class="normal_h2">Pellentesque tincidunt rhoncus purus, a tincidunt ligula pretium at. Nunc vel dictum
+                                <h2 class="normal_h2">Pellentesque tincidunt rhoncus purus, a tincidunt ligula pretium
+                                    at. Nunc vel dictum
                                     nisl. Vivamus et pulvinar nunc, nec consectetur urna. </h2>
                                 <span class="autore ">Integer vel</span>
                             </article>
@@ -280,10 +361,11 @@
 
                     <div class="news_left">
                         <a href="news/news2.html">
-                            <div><img src="https://placehold.co/315x176/png" alt="Notizia numero 12"></div>
+                            <div><img src="https://placehold.co/1920x1080?text=Lista+Notizia+in+Evidenza" alt="Notizia numero 12"></div>
                             <article>
                                 <span class="normal_span">Fusce congue</span>
-                                <h2 class="normal_h2">Maecenas ut nisi purus. Etiam suscipit, neque vitae malesuada consectetur, diam mi
+                                <h2 class="normal_h2">Maecenas ut nisi purus. Etiam suscipit, neque vitae malesuada
+                                    consectetur, diam mi
                                     mattis dui, at commodo augue purus ut nibh. </h2>
                                 <span class="autore ">Nunc sed</span>
                             </article>
@@ -292,10 +374,11 @@
 
                     <div class="news_right">
                         <a href="news/news2.html">
-                            <div><img src="https://placehold.co/315x176/png" alt="Notizia numero 13"></div>
+                            <div><img src="https://placehold.co/1920x1080?text=Lista+Notizia+in+Evidenza" alt="Notizia numero 13"></div>
                             <article>
                                 <span class="normal_span">Morbi id</span>
-                                <h2  class="normal_h2">Fusce porta nunc quis dignissim imperdiet. Vestibulum lacinia urna luctus, commodo
+                                <h2 class="normal_h2">Fusce porta nunc quis dignissim imperdiet. Vestibulum lacinia urna
+                                    luctus, commodo
                                     lacus nec, rutrum ligula. Sed sagittis a augue a. </h2>
                                 <span class="autore ">Sed in</span>
                             </article>
@@ -304,10 +387,11 @@
 
                     <div class="news_left">
                         <a href="news/news2.html">
-                            <div><img src="https://placehold.co/315x176/png" alt="Notizia numero 14"></div>
+                            <div><img src="https://placehold.co/1920x1080?text=Lista+Notizia+in+Evidenza" alt="Notizia numero 14"></div>
                             <article>
                                 <span class="normal_span">Quisque sollicitudin</span>
-                                <h2  class="normal_h2">Nulla id metus vulputate, commodo felis id, consequat diam. Curabitur et arcu in
+                                <h2 class="normal_h2">Nulla id metus vulputate, commodo felis id, consequat diam.
+                                    Curabitur et arcu in
                                     nulla dictum blandit. Donec lobortis tempor ligula</h2>
                                 <span class="autore ">Aliquam erat</span>
                             </article>
@@ -316,10 +400,11 @@
 
                     <div class="news_right">
                         <a href="news/news2.html">
-                            <div><img src="https://placehold.co/315x176/png" alt="Notizia numero 15"></div>
+                            <div><img src="https://placehold.co/1920x1080?text=Lista+Notizia+in+Evidenza" alt="Notizia numero 15"></div>
                             <article>
                                 <span class="normal_span">Ut pellentesque</span>
-                                <h2 class="normal_h2">Proin sed nibh quis est egestas vulputate vel ac orci. Curabitur non lectus
+                                <h2 class="normal_h2">Proin sed nibh quis est egestas vulputate vel ac orci. Curabitur
+                                    non lectus
                                     faucibus, consectetur felis quis, sollicitudin odio. Sed.</h2>
                                 <span class="autore ">Duis volutpat</span>
                             </article>
@@ -339,21 +424,23 @@
                 <div class="news_colomn">
                     <div class="bordobasso_scuro">
                         <a href="news/news1.html">
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 16">
+                            <img src="https://placehold.co/1920x1080?text=Notizia+Cultura+Spettacolo" alt="Notizia numero 16">
                             <article>
                                 <span class="normal_span">Aliquam dapibus</span>
-                                <h2 class="normal_h2">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                <h2 class="normal_h2">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                                    posuere cubilia
                                     curae; Sed ornare eros augue, vel accumsan nunc</h2>
                                 <span class="autore  ">Aliquam atres</span>
                             </article>
                         </a>
                     </div>
-                    <div class="bordobasso_chiaro">
+                    <div class="bordobasso_scuro">
                         <a href="news/news1.html">
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 17">
+                            <img src="https://placehold.co/1920x1080?text=Notizia+Cultura+Spettacolo" alt="Notizia numero 17">
                             <article>
                                 <span class="normal_span">Morbi euismod</span>
-                                <h2 class="normal_h2">Nam est augue, tempor a leo mollis, pulvinar accumsan magna. Quisque consectetur
+                                <h2 class="normal_h2">Nam est augue, tempor a leo mollis, pulvinar accumsan magna.
+                                    Quisque consectetur
                                     felis dolor, sed dapibus lectus placerat ut. Curabitur</h2>
                                 <span class="autore ">Duis aliquam</span>
                             </article>
@@ -362,10 +449,11 @@
 
                     <div>
                         <a href="news/news1.html">
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 18">
+                            <img src="https://placehold.co/1920x1080?text=Notizia+Cultura+Spettacolo" alt="Notizia numero 18">
                             <article>
                                 <span class="normal_span">Aenean blandit orci. </span>
-                                <h2 class="normal_h2">Proin vestibulum neque finibus justo ullamcorper placerat. Sed efficitur nec tellus
+                                <h2 class="normal_h2">Proin vestibulum neque finibus justo ullamcorper placerat. Sed
+                                    efficitur nec tellus
                                     nec euismod. Donec leo odio, faucibus ac ultrices at</h2>
                                 <span class="autore ">Nunc duis</span>
                             </article>
@@ -373,7 +461,7 @@
                     </div>
                 </div>
                 <div class="center red_button">
-                    <button>Quisque mattis elementum</button>
+                    <button class="square_red_button">Quisque mattis elementum</button>
                 </div>
             </section>
 
@@ -382,9 +470,9 @@
 
     <div id="LaNuovaScuola">
         <a href="index.html">
-            <div class="center"><img src="https://placehold.co/958x95/png" alt="Notizia numero 19"></div>
+            <div class="center"><img src="https://placehold.co/958x95?text=Sito+Speciale" alt="Notizia numero 19"></div>
             <div class="red_button">
-                <button>Quisque mattis elementum</button>
+                <button class="square_red_button">Quisque mattis elementum</button>
             </div>
         </a>
     </div>
@@ -394,16 +482,18 @@
         <div class="news_block">
             <div class="news_colomn_twin">
                 <div>
-                    <img src="https://placehold.co/481x270/png" alt="Notizia numero 20">
+                    <img class="imgSportivaPrinc" src="https://placehold.co/1920x1080?text=Notizia+Sportiva" alt="Notizia numero 20">
                     <a href="news/news1.html">
                         <article>
                             <span class="normal_span">Proin bibendum</span>
-                            <h2 class="normal_h2">Mauris lectus erat, viverra eget metus viverra, tempus sollicitudin erat. Vivamus luctus arcu sed diam eleifend auctor. Suspendisse quis metus</h2>
+                            <h2 class="normal_h2">Mauris lectus erat, viverra eget metus viverra, tempus sollicitudin
+                                erat. Vivamus luctus arcu sed diam eleifend auctor. Suspendisse quis metus</h2>
                         </article>
                     </a>
                     <div class="link_secondario">
                         <span style="color:#063A74;font-size:18px;">&#9687;</span>
-                        <a href="news/news12.html">&#171;Cras consectetur, felis quis venenatis viverra&#187;: , nisi dui commodo nibh, sit amet tincidunt erat augue a nunc. Curabitur imperdiet et.</a>
+                        <a href="news/news12.html">&#171;Cras consectetur, felis quis venenatis viverra&#187;: , nisi
+                            dui commodo nibh, sit amet tincidunt erat augue a nunc. Curabitur imperdiet et.</a>
                     </div>
                 </div>
             </div>
@@ -411,10 +501,10 @@
                 <div>
                     <a href="news/news1.html">
                         <div class="text_left bordobasso_scuro">
-                            <div><img src="https://placehold.co/236x133/png" alt="Notizia numero 21"></div>
-                            <article>
-                                <span class="normal_span">caccio</span>
-                                <h2 class="normal_h2">devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
+                            <div class="equa_divisione"><img class="imgSportivaSec" src="https://placehold.co/1920x1080?text=Notizia+Sportiva\nSecondario" alt="Notizia numero 21"></div>
+                            <article class="equa_divisione">
+                                <span class="normal_span">Praesent pharetra</span>
+                                <h2 class="normal_h2">Sem mi varius turpis, vel aliquam turpis nulla id nibh. Nulla viverra. Praesent eu libero faucibus</h2>
                             </article>
                         </div>
                     </a>
@@ -422,10 +512,10 @@
                 <div>
                     <a href="news/news1.html">
                         <div class="text_left bordobasso_scuro">
-                            <div><img src="https://placehold.co/236x133/png" alt="Notizia numero 22"></div>
-                            <article>
-                                <span class="normal_span">caccio</span>
-                                <h2 class="normal_h2">devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
+                            <div class="equa_divisione"><img class="imgSportivaSec" src="https://placehold.co/1920x1080?text=Notizia+Sportiva\nSecondario" alt="Notizia numero 21"></div>
+                            <article class="equa_divisione">
+                                <span class="normal_span">Adipisci velit</span>
+                                <h2 class="normal_h2">Proin porta purus ante, ut dignissim justo aliquam vel. Fusce mattis pharetra turpis, eget euismod sapien vestibulum sed</h2>
                             </article>
                         </div>
                     </a>
@@ -433,17 +523,16 @@
                 <div>
                     <a href="news/news1.html">
                         <div class="text_left">
-                            <div><img src="https://placehold.co/236x133/png" alt="Notizia numero 23"></div>
-                            <article>
-                                <span class="normal_span">caccio</span>
-                                <h2  class="normal_h2">devo scrivere tanto test per vedere dove va. caccio devo scrivere tanto</h2>
+                            <div class="equa_divisione"><img class="imgSportivaSec" src="https://placehold.co/1920x1080?text=Notizia+Sportiva\nSecondario" alt="Notizia numero 21"></div>
+                            <article class="equa_divisione">
+                                <span class="normal_span">Fusce mattis</span>
+                                <h2 class="normal_h2">Sed congue, elit at pellentesque condimentum</h2>
                             </article>
                         </div>
                     </a>
                     <div class="link_secondario">
                         <span style="color:#063A74;font-size:18px;">&#9687;</span>
-                        <a href="news/news12.html">&#171;Ci sono spiagge belle, poi c'è Cala Goloritzè&#187;: lo spot
-                            della Sardegna è sul New York Times</a>
+                        <a href="news/news12.html">Phasellus imperdiet pulvinar nisi, et fermentum metus feugiat quis. Praesent pharetra velit massa, nec dignissim dui consequat et. In dignissim dolor</a>
                     </div>
                 </div>
             </div>
@@ -455,7 +544,7 @@
     </section>
 
     <a href="news/news1.html">
-        <div><img src="https://placehold.co/974x509/png" alt="Notizia numero 24"></div>
+        <div><img class="ad" src="https://placehold.co/1920x1080?text=Pubblicità" alt="Notizia numero 24"></div>
     </a>
 
     <section id="ItaliaMondo" class="bordobasso_scuro">
@@ -465,68 +554,74 @@
                 <div class="news_slide_single">
                     <a href="news/news1.html">
                         <div>
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 25">
+                            <img src="https://placehold.co/1920x1080?text=Lista+Notizia" alt="Notizia numero 25">
                         </div>
                         <article>
                             <span>Lorem ipsum </span>
-                            <h2  class="normal_h2">In a justo non augue iaculis tempor. Sed quis tortor lectus. Pellentesque ornare vestibulum tellus at tempus. Quisque non libero</h2>
+                            <h2 class="normal_h2">In a justo non augue iaculis tempor. Sed quis tortor lectus.
+                                Pellentesque ornare vestibulum tellus at tempus. Quisque non libero</h2>
                         </article>
                     </a>
                 </div>
-                <div class="news_slide_single">
+                <div class="news_slide_single only_media_short">
                     <a href="news/news1.html">
-                        <div>
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 26">
+                        <div class="only_media_short">
+                            <img src="https://placehold.co/1920x1080?text=Lista+Notizia" alt="Notizia numero 26">
                         </div>
-                        <article>
+                        <article class="only_media_short">
                             <span>Sed eleifend </span>
-                            <h2 class="normal_h2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nulla lacus, sollicitudin non eros non, laoreet aliquam urna. In malesuada</h2>
+                            <h2 class="normal_h2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                nulla lacus, sollicitudin non eros non, laoreet aliquam urna. In malesuada</h2>
                         </article>
                     </a>
                 </div>
-                <div class="news_slide_single">
+                <div class="news_slide_single only_media_short">
                     <a href="news/news1.html">
-                        <div>
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 27">
+                        <div class="only_media_short">
+                            <img src="https://placehold.co/1920x1080?text=Lista+Notizia" alt="Notizia numero 27">
                         </div>
-                        <article>
+                        <article class="only_media_short">
                             <span>Etiam rhoncus</span>
-                            <h2 class="normal_h2">Nullam vulputate arcu dictum, vestibulum eros id, maximus ex. Integer ac leo non magna eleifend pretium a pulvinar diam. Morbi</h2>
+                            <h2 class="normal_h2">Nullam vulputate arcu dictum, vestibulum eros id, maximus ex. Integer
+                                ac leo non magna eleifend pretium a pulvinar diam. Morbi</h2>
                         </article>
                     </a>
                 </div>
             </div>
             <div class="news_slide">
-                <div class="news_slide_single">
+                <div class="news_slide_single only_media_short">
                     <a href="news/news1.html">
-                        <div>
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 28">
+                        <div class="only_media_short">
+                            <img src="https://placehold.co/1920x1080?text=Lista+Notizia" alt="Notizia numero 28">
                         </div>
-                        <article>
+                        <article class="only_media_short">
                             <span>Donec feugiat</span>
-                            <h2 class="normal_h2">Vivamus gravida odio diam. Maecenas molestie vestibulum lorem nec vulputate.</h2>
+                            <h2 class="normal_h2">Vivamus gravida odio diam. Maecenas molestie vestibulum lorem nec
+                                vulputate.</h2>
                         </article>
                     </a>
                 </div>
-                <div class="news_slide_single">
+                <div class="news_slide_single only_media_short">
                     <a href="news/news1.html">
-                        <div>
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 29">
+                        <div class="only_media_short">
+                            <img src="https://placehold.co/1920x1080?text=Lista+Notizia" alt="Notizia numero 29">
                         </div>
-                        <article>
+                        <article class="only_media_short">
                             <span>Donec id est</span>
-                            <h2 class="normal_h2">Proin tincidunt efficitur ante, id porta erat dignissim id. Etiam venenatis est orci</h2>
+                            <h2 class="normal_h2">Proin tincidunt efficitur ante, id porta erat dignissim id. Etiam
+                                venenatis est orci</h2>
                         </article>
                     </a>
                 </div>
-                <div class="news_slide_single">
+                <div class="news_slide_single only_media_short">
                     <a href="news/news1.html">
-                        <div>
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 30">
+                        <div class="only_media_short">
+                            <img src="https://placehold.co/1920x1080?text=Lista+Notizia" alt="Notizia numero 30">
                         </div>
-                        <article>
+                        <article class="only_media_short">
                             <span>Donec nunc</span>
-                            <h2 class="normal_h2">Nullam fringilla, leo nec consequat volutpat, dui lectus aliquam massa</h2>
+                            <h2 class="normal_h2">Nullam fringilla, leo nec consequat volutpat, dui lectus aliquam
+                                massa</h2>
                         </article>
                     </a>
                 </div>
@@ -550,16 +645,20 @@
             <div class="news_block">
                 <div class="news_colomn_twin">
                     <div>
-                        <img src="https://placehold.co/481x270/png" alt="Notizia numero 31">
+                        <img class="imgSportivaPrinc" src="https://placehold.co/1920x1080?text=Notizia+Economia" alt="Notizia numero 31">
                         <a href="news/news1.html">
                             <article>
                                 <span class="normal_span">Vestibulum luctus</span>
-                                <h2 class="normal_h2">Etiam rhoncus imperdiet augue vitae ullamcorper. Aenean congue sit amet sem sed imperdiet. Morbi rhoncus purus tempor erat volutpat tincidunt. Sed at mollis ante, eu sodales massa</h2>
+                                <h2 class="normal_h2">Etiam rhoncus imperdiet augue vitae ullamcorper. Aenean congue sit
+                                    amet sem sed imperdiet. Morbi rhoncus purus tempor erat volutpat tincidunt. Sed at
+                                    mollis ante, eu sodales massa</h2>
                             </article>
                         </a>
                         <div class="link_secondario">
                             <span style="color:#063A74;font-size:18px;">&#9687;</span>
-                            <a href="news/news12.html">&#171;Nullam aliquet viverra erat, sed tempus tortor&#187;: Proin est ipsum, faucibus quis massa interdum, euismod tristique sapien. Nullam posuere, libero vitae porttitor porta</a>
+                            <a href="news/news12.html">&#171;Nullam aliquet viverra erat, sed tempus tortor&#187;: Proin
+                                est ipsum, faucibus quis massa interdum, euismod tristique sapien. Nullam posuere,
+                                libero vitae porttitor porta</a>
                         </div>
                     </div>
                 </div>
@@ -567,10 +666,11 @@
                     <div>
                         <a href="news/news1.html">
                             <div class="news_button_pad text_left bordobasso_scuro">
-                                <div><img src="https://placehold.co/236x133/png" alt="Notizia numero 32"></div>
-                                <article>
+                                <div class="equa_divisione"><img class="imgSportivaSec" src="https://placehold.co/1920x1080?text=Notizia+Sportiva\nSecondario" alt="Notizia numero 32"></div>
+                                <article class="equa_divisione">
                                     <span class="normal_span">Morbi rhoncus</span>
-                                    <h2 class="normal_h2">Etiam quis nulla purus. Duis posuere mattis urna, at dictum odio elementum sodales. </h2>
+                                    <h2 class="normal_h2">Etiam quis nulla purus. Duis posuere mattis urna, at dictum
+                                        odio elementum sodales. </h2>
                                 </article>
                             </div>
                         </a>
@@ -578,10 +678,11 @@
                     <div>
                         <a href="news/news1.html">
                             <div class="news_button_pad text_left bordobasso_scuro">
-                                <div><img src="https://placehold.co/236x133/png" alt="Notizia numero 33"></div>
-                                <article>
+                                <div class="equa_divisione"><img class="imgSportivaSec" src="https://placehold.co/1920x1080?text=Notizia+Sportiva\nSecondario" alt="Notizia numero 33"></div>
+                                <article class="equa_divisione">
                                     <span class="normal_span">Morbi orci</span>
-                                    <h2 class="normal_h2">Aliquam sit amet lacus nisi. Phasellus ex nisl, finibus id mollis nec, congue ut enim. </h2>
+                                    <h2 class="normal_h2">Aliquam sit amet lacus nisi. Phasellus ex nisl, finibus id
+                                        mollis nec, congue ut enim. </h2>
                                 </article>
                             </div>
                         </a>
@@ -589,16 +690,19 @@
                     <div>
                         <a href="news/news1.html">
                             <div class="text_left">
-                                <div><img src="https://placehold.co/236x133/png" alt="Notizia numero 34"></div>
-                                <article>
+                                <div class="equa_divisione"><img class="imgSportivaSec" src="https://placehold.co/1920x1080?text=Notizia+Sportiva\nSecondario" alt="Notizia numero 34"></div>
+                                <article class="equa_divisione">
                                     <span class="normal_span">Aliquam sit</span>
-                                    <h2 class="normal_h2">Nulla vitae tellus eu felis ultrices condimentum. Vestibulum ante ipsum primis in faucibus orci luctus</h2>
+                                    <h2 class="normal_h2">Nulla vitae tellus eu felis ultrices condimentum. Vestibulum
+                                        ante ipsum primis in faucibus orci luctus</h2>
                                 </article>
                             </div>
                         </a>
                         <div class="link_secondario">
                             <span style="color:#063A74;font-size:18px;">&#9687;</span>
-                            <a href="news/news12.html">&#171;Nullam aliquet viverra erat, sed tempus tortor&#187;: Proin est ipsum, faucibus quis massa interdum, euismod tristique sapien. Nullam posuere, libero vitae porttitor porta</a>
+                            <a href="news/news12.html">&#171;Nullam aliquet viverra erat, sed tempus tortor&#187;: Proin
+                                est ipsum, faucibus quis massa interdum, euismod tristique sapien. Nullam posuere,
+                                libero vitae porttitor porta</a>
                         </div>
                     </div>
                 </div>
@@ -609,46 +713,49 @@
     <section id="UltimiVideo">
         <div>
             <div class="circle center">
-                    <img src="image/webcam_logo.png" width="22" height="22"  alt="Ultimi Video"/>
+                <img src="image/webcam_logo.png" width="22" height="22" alt="Ultimi Video"/>
             </div>
             <h4 class="center">Ultimi video</h4>
             <div class="last_video">
                 <a href="news/news1.html">
                     <div>
-                        <img src="https://placehold.co/228x128/png" alt="Notizia numero 35">
+                        <img src="https://placehold.co/1920x1080?text=Ultimo+Video" alt="Notizia numero 35">
                     </div>
                     <article>
                         <span class="title_white normal_span">Pellentesque habitant</span>
-                        <h2 class="normal_h2"> Vestibulum aliquet, nibh at ullamcorper pulvinar, sapien metus consequat sapien, id pellentesque orci enim a metus. </h2>
+                        <h2 class="normal_h2"> Vestibulum aliquet, nibh at ullamcorper pulvinar, sapien metus consequat
+                            sapien, id pellentesque orci enim a metus. </h2>
                     </article>
                 </a>
                 <a href="news/news1.html">
                     <div>
-                        <img src="https://placehold.co/228x128/png" alt="Notizia numero 35">
+                        <img src="https://placehold.co/1920x1080?text=Ultimo+Video" alt="Notizia numero 36">
                     </div>
                     <article>
                         <span class="title_white normal_span">Quisque rutrum</span>
-                        <h2 class="normal_h2">Aliquam fringilla laoreet augue. Etiam convallis accumsan massa, eu ultricies neque lobortis eu. </h2>
+                        <h2 class="normal_h2">Aliquam fringilla laoreet augue. Etiam convallis accumsan massa, eu
+                            ultricies neque lobortis eu. </h2>
                     </article>
                 </a>
-                <a href="news/news1.html">
+                <a href="news/news1.html" class="media_long">
                     <div>
-                        <img src="https://placehold.co/228x128/png" alt="Notizia numero 36">
+                        <img src="https://placehold.co/1920x1080?text=Ultimo+Video" alt="Notizia numero 37">
                     </div>
                     <article>
                         <span class="title_white normal_span">Sed et felis</span>
                         <h2 class="normal_h2">Suspendisse ut felis sit amet nulla posuere ultricies. Pellentesque id urna consectetur</h2>
                     </article>
                 </a>
-                <a href="news/news1.html">
+                <a href="news/news1.html" class="media_long">
                     <div>
-                        <img src="https://placehold.co/228x128/png" alt="Notizia numero 37">
+                        <img src="https://placehold.co/1920x1080?text=Ultimo+Video" alt="Notizia numero 38">
                     </div>
                     <article>
                         <span class="title_white normal_span">Etiam quis nulla purus</span>
                         <h2 class="normal_h2">Maecenas ultricies urna mauris, id venenatis libero ullamcorper et. Cras sed diam dictum, tristique felis a, condimentum lectus</h2>
                     </article>
                 </a>
+
             </div>
             <div class="center">
                 <ul class="bottoni-linea">
@@ -696,17 +803,21 @@
             <div class="news_block">
                 <div class="news_colomn_twin">
                     <div>
-                        <img src="https://placehold.co/481x270/png" alt="Notizia numero 37">
+                        <img  class="imgSportivaPrinc" src="https://placehold.co/1920x1080?text=Speciale+Cibo" alt="Notizia numero 37">
                         <a href="news/news1.html">
                             <article>
                                 <span class="normal_span">Vestibulum quis</span>
-                                <h2 class="normal_h2">Suspendisse finibus velit ut diam vehicula ullamcorper. Mauris at leo id ipsum venenatis vulputate ac et velit. Nunc ac diam euismod turpis pellentesque ultricies</h2>
+                                <h2 class="normal_h2">Suspendisse finibus velit ut diam vehicula ullamcorper. Mauris at
+                                    leo id ipsum venenatis vulputate ac et velit. Nunc ac diam euismod turpis
+                                    pellentesque ultricies</h2>
                                 <span class="autore">Nunc ac</span>
                             </article>
                         </a>
                         <div class="link_secondario">
                             <span style="color:#063A74;font-size:18px;">&#9687;</span>
-                            <a href="news/news12.html">Pellentesque scelerisque lacus et justo tincidunt volutpat. Aliquam laoreet urna eget tempus placerat. Sed risus ante, tempus eu ornare id, tempus in elit</a>
+                            <a href="news/news12.html">Pellentesque scelerisque lacus et justo tincidunt volutpat.
+                                Aliquam laoreet urna eget tempus placerat. Sed risus ante, tempus eu ornare id, tempus
+                                in elit</a>
                         </div>
                     </div>
                 </div>
@@ -714,10 +825,11 @@
                     <div>
                         <a href="news/news1.html">
                             <div class="news_button_pad text_left bordobasso_scuro">
-                                <div><img src="https://placehold.co/236x133/png" alt="Notizia numero 37"></div>
-                                <article>
+                                <div class="equa_divisione"><img class="imgSportivaSec" src="https://placehold.co/1920x1080?text=Speciale+Cucina" alt="Notizia numero 37"></div>
+                                <article class="equa_divisione">
                                     <span class="normal_span">Praesent ut urna enim</span>
-                                    <h2 class="normal_h2">Maecenas hendrerit id felis vel feugiat. Integer lacinia quam a scelerisque mollis. Nunc nunc velit, tempor non orci at,</h2>
+                                    <h2 class="normal_h2">Maecenas hendrerit id felis vel feugiat. Integer lacinia quam
+                                        a scelerisque mollis. Nunc nunc velit, tempor non orci at,</h2>
                                     <span class="autore">Aliquam laoreet</span>
                                 </article>
                             </div>
@@ -726,10 +838,12 @@
                     <div>
                         <a href="news/news1.html">
                             <div class="news_button_pad text_left bordobasso_scuro">
-                                <div><img src="https://placehold.co/236x133/png" alt="Notizia numero 38"></div>
-                                <article>
+                                <div class="equa_divisione"><img class="imgSportivaSec" src="https://placehold.co/1920x1080?text=Pasto+Veloce" alt="Notizia numero 38"></div>
+                                <article class="equa_divisione">
                                     <span class="normal_span">Nunc eleifend</span>
-                                    <h2 class="normal_h2">Cras eget mauris elit. Duis venenatis arcu sodales sapien faucibus laoreet. Praesent tempor blandit posuere. Integer faucibus malesuada euismod</h2>
+                                    <h2 class="normal_h2">Cras eget mauris elit. Duis venenatis arcu sodales sapien
+                                        faucibus laoreet. Praesent tempor blandit posuere. Integer faucibus malesuada
+                                        euismod</h2>
                                     <span class="autore">Velit Nunc</span>
                                 </article>
                             </div>
@@ -738,10 +852,12 @@
                     <div>
                         <a href="news/news1.html">
                             <div class="text_left">
-                                <div><img src="https://placehold.co/236x133/png" alt="Notizia numero 38"></div>
-                                <article>
+                                <div class="equa_divisione"><img class="imgSportivaSec" src="https://placehold.co/1920x1080?text=Cena+Veloce" alt="Notizia numero 38"></div>
+                                <article class="equa_divisione">
                                     <span class="normal_span">Nunc nunc velit</span>
-                                    <h2 class="normal_h2">Maecenas vel blandit odio. Sed eget tortor in mi gravida imperdiet id sit amet lectus. Suspendisse sem est, consectetur sit amet convallis in</h2>
+                                    <h2 class="normal_h2">Maecenas vel blandit odio. Sed eget tortor in mi gravida
+                                        imperdiet id sit amet lectus. Suspendisse sem est, consectetur sit amet
+                                        convallis in</h2>
                                     <span class="autore">Sit amet</span>
                                 </article>
                             </div>
@@ -761,9 +877,9 @@
         <div class="little_news">
             <div class="little_news_list">
                 <div class="little_news_left">
-                    <a href="news/news1.html">
+                    <a href="news/news1.html" class="little_news_list_a">
                         <div>
-                            <img src="https://placehold.co/228x128/png" alt="Notizia numero 39">
+                            <img src="https://placehold.co/1920x1080?text=Prima+Iniziativa" alt="Notizia numero 39">
                         </div>
                         <article>
                             <span class="normal_span">Etiam convallis</span>
@@ -772,9 +888,9 @@
                     </a>
                 </div>
                 <div class="little_news_right">
-                    <a href="news/news1.html">
+                    <a href="news/news1.html" class="little_news_list_a">
                         <div>
-                            <img src="https://placehold.co/228x128/png" alt="Notizia numero 40">
+                            <img src="https://placehold.co/1920x1080?text=Prima+Iniziativa" alt="Notizia numero 40">
                         </div>
                         <article>
                             <span class="normal_span">Nam pharetra</span>
@@ -789,66 +905,73 @@
 
     <div id="Misto" class="bordobasso_scuro">
         <div class="left"> <!-- da correggere-->
-            <section id="INTERVISTE">
-                    <div>
-                        <a class="blue_box" href="news/news1.html">
-                            <h6 class="title_white">A TU PER TU - LA MIA SARDEGNA - LE INTERVISTE</h6>
-                            <div class="center"><h2 class="title_white_opacity">STORIE</h2>
-                                <h2 class="title_white">PERSONAGGI</h2></div>
+            <section id="Interviste">
+                <div>
+                    <a class="blue_box" href="news/news1.html">
+                        <h6 class="title_white">A TU PER TU - LA MIA SARDEGNA - LE INTERVISTE</h6>
+                        <div class="center"><h2 class="title_white_opacity">STORIE</h2>
+                            <h2 class="title_white">PERSONAGGI</h2></div>
+                    </a>
+                </div>
+                <div class="news_block_interv">
+                    <div class="news_block_interv_left">
+                        <a href="news/news1.html">
+                            <img src="https://placehold.co/1920x1080?text=Intervista+Personaggio" alt="Notizia numero 41">
+                            <article>
+                                <span class="normal_span">Ut metus</span>
+                                <h2 class="normal_h2">Pellentesque pellentesque massa mauris, at vestibulum ipsum luctus
+                                    et. Integer aliquam purus luctus vehicula eleifend. Maecenas volutpat consequat
+                                    quam, vel pharetra tellus feugiat euo</h2>
+                                <span class="autore">Maecenas volutpat</span>
+                            </article>
+                        </a>
+                        <div class="link_secondario">
+                            <span style="color:#063A74;font-size:18px;">&#9687;</span>
+                            <a href="news/news12.html">Sed quis lacus hendrerit mauris placerat congue. Morbi sagittis
+                                dolor metus. Vestibulum quis eros id justo fringilla scelerisque sed sed odio</a>
+                        </div>
+                    </div>
+                    <div class="news_block_interv_right">
+                        <a href="news/news1.html">
+                            <div>
+                                <img src="https://placehold.co/1920x1080?text=Storia+Personaggio" alt="Notizia numero 42">
+                            </div>
+                            <article>
+                                <span class="normal_span">Morbi sagittis</span>
+                                <h2 class="normal_h2">Mauris eu lacinia mauris. In ullamcorper facilisis erat, non
+                                    iaculis sapien faucibus ut. Integer eu magna orci. Cras porta eget lectus et
+                                    ullamcorper.</h2>
+                                <span class="autore">Integer eu</span>
+                            </article>
+                        </a>
+                        <a href="news/news1.html">
+                            <div>
+                                <img src="https://placehold.co/1920x1080?text=Personaggio" alt="Notizia numero 43">
+                            </div>
+                            <article>
+                                <span class="normal_span">Morbi sagittis</span>
+                                <h2 class="normal_h2">Mauris eu lacinia mauris. In ullamcorper facilisis erat, non
+                                    iaculis sapien faucibus ut. Integer eu magna orci. Cras porta eget lectus et
+                                    ullamcorper.</h2>
+                                <span class="autore">Integer eu</span>
+                            </article>
                         </a>
                     </div>
-                    <div class="news_block_interv">
-                        <div class="news_block_interv_left">
-                                <img src="https://placehold.co/426x240/png" alt="Notizia numero 41">
-                                <a href="news/news1.html">
-                                    <article>
-                                        <span class="normal_span">Ut metus</span>
-                                        <h2 class="normal_h2">Pellentesque pellentesque massa mauris, at vestibulum ipsum luctus et. Integer aliquam purus luctus vehicula eleifend. Maecenas volutpat consequat quam, vel pharetra tellus feugiat euo</h2>
-                                        <span class="autore">Maecenas volutpat</span>
-                                    </article>
-                                </a>
-                                <div class="link_secondario">
-                                    <span style="color:#063A74;font-size:18px;">&#9687;</span>
-                                    <a href="news/news12.html">Sed quis lacus hendrerit mauris placerat congue. Morbi sagittis dolor metus. Vestibulum quis eros id justo fringilla scelerisque sed sed odio</a>
-                                </div>
-                        </div>
-                        <div class="news_block_interv_right">
-                            <a href="news/news1.html">
-                                <div>
-                                    <img src="https://placehold.co/228x128/png" alt="Notizia numero 42">
-                                </div>
-                                <article>
-                                    <span class="normal_span">Morbi sagittis</span>
-                                    <h2 class="normal_h2">Mauris eu lacinia mauris. In ullamcorper facilisis erat, non iaculis sapien faucibus ut. Integer eu magna orci. Cras porta eget lectus et ullamcorper.</h2>
-                                    <span class="autore">Integer eu</span>
-                                </article>
-                            </a>
-                            <a href="news/news1.html">
-                                <div>
-                                    <img src="https://placehold.co/228x128/png" alt="Notizia numero 43">
-                                </div>
-                                <article>
-                                    <span class="normal_span">Morbi sagittis</span>
-                                    <h2 class="normal_h2">Mauris eu lacinia mauris. In ullamcorper facilisis erat, non iaculis sapien faucibus ut. Integer eu magna orci. Cras porta eget lectus et ullamcorper.</h2>
-                                    <span class="autore">Integer eu</span>
-                                </article>
-                            </a>
-                        </div>
-                    </div>
+                </div>
             </section>
             <section class="news_slide">
                 <div class="news_slide_single">
-                    <div><img src="https://placehold.co/201x113/png" alt="Notizia numero 44"></div>
+                    <div><img src="https://placehold.co/1920x1080?text=Attività 1" alt="Notizia numero 44"></div>
                     <div><span>Neque porro</span>
                         <h2>Nam pellentesque dolor quis tincidunt pellentesque.</h2></div>
                 </div>
                 <div class="news_slide_single">
-                    <div><img src="https://placehold.co/201x113/png" alt="Notizia numero 45"></div>
+                    <div><img src="https://placehold.co/1920x1080?text=Attività 2" alt="Notizia numero 45"></div>
                     <div><span>Duis iaculis</span>
                         <h2>Integer egestas nisi a arcu varius, nec aliquet augue efficitur. </h2></div>
                 </div>
-                <div class="news_slide_single">
-                    <div><img src="https://placehold.co/201x113/png" alt="Notizia numero 46"></div>
+                <div class="news_slide_single media_long">
+                    <div><img src="https://placehold.co/1920x1080?text=Attività 3" alt="Notizia numero 46"></div>
                     <div><span>Nullam condimentum</span>
                         <h2>Vestibulum rutrum nisl in odio ullamcorper pharetra</h2></div>
                 </div>
@@ -867,16 +990,19 @@
                     </li>
                 </ul>
             </div>
-            <img src="https://placehold.co/633x240/png" alt="Notizia numero 47">
+            <a>
+                <img src="https://placehold.co/633x240?text=Attività+Sociali" alt="Notizia numero 47">
+            </a>
         </div>
 
 
         <div class="right">
-            <section class="borded bordobasso_scuro">
+            <section class="borded">
                 <h5 class="bordobasso_scuro">Etiam metus</h5>
                 <a href="news/news1.html">
                     <article>
-                        <h2 class="bordobasso_scuro">Ut condimentum urna in lorem iaculis rutrum. Donec non facilisis augue, molestie mollis nunc. Duis semper ac tortor vitae egestas. </h2>
+                        <h2 class="bordobasso_scuro">Ut condimentum urna in lorem iaculis rutrum. Donec non facilisis
+                            augue, molestie mollis nunc. Duis semper ac tortor vitae egestas. </h2>
                     </article>
                 </a>
                 <a href="news/news1.html">
@@ -891,16 +1017,18 @@
                 </a>
             </section>
 
-            <section class="borded">
-                <h5>Curabitur</h5>
+            <section class="borded ">
+                <h5 class=bordobasso_scuro">Curabitur</h5>
                 <a href="news/news1.html">
                     <article>
-                        <h2 class="bordobasso_scuro">Etiam dictum, mi eu dignissim varius, augue risus imperdiet ligula, id tincidunt sapien ante sed lectus</h2>
+                        <h2 class="bordobasso_scuro">Etiam dictum, mi eu dignissim varius, augue risus imperdiet ligula,
+                            id tincidunt sapien ante sed lectus</h2>
                     </article>
                 </a>
                 <a href="news/news1.html">
                     <article>
-                        <h2 class="bordobasso_scuro">Praesent est tellus, vulputate in pretium aliquam, faucibus ut sem. </h2>
+                        <h2 class="bordobasso_scuro">Praesent est tellus, vulputate in pretium aliquam, faucibus ut
+                            sem. </h2>
                     </article>
                 </a>
                 <a href="news/news1.html">
@@ -926,7 +1054,7 @@
                 <div class="news_slide_single">
                     <a href="news/news1.html">
                         <div>
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 48">
+                            <img src="https://placehold.co/1920x1080?text=Attività+Sana" alt="Notizia numero 48">
                         </div>
                         <article>
                             <span class="normal_span">Suspendisse viverra</span>
@@ -937,25 +1065,55 @@
                 <div class="news_slide_single">
                     <a href="news/news1.html">
                         <div>
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 49">
+                            <img src="https://placehold.co/1920x1080?text=Attività+Bella" alt="Notizia numero 49">
                         </div>
                         <article>
                             <span class="normal_span">Nulla pretium</span>
-                            <h2 class="normal_h2">Phasellus placerat et turpis non placerat. Nam gravida purus enim, ut elementum odio dignissim nec.</h2>
+                            <h2 class="normal_h2">Phasellus placerat et turpis non placerat. Nam gravida purus enim, ut
+                                elementum odio dignissim nec.</h2>
                         </article>
                     </a>
                 </div>
-                <div class="news_slide_single">
+                <div class="news_slide_single media_long">
                     <a href="news/news1.html">
                         <div>
-                            <img src="https://placehold.co/318x179/png" alt="Notizia numero 50">
+                            <img src="https://placehold.co/1920x1080?text=Attività+Speciale" alt="Notizia numero 50">
                         </div>
                         <article>
                             <span class="normal_span">Quisque rutrum</span>
-                            <h2 class="normal_h2">Donec commodo, diam vel efficitur laoreet, dolor est faucibus neque, eu malesuada ipsum quam id nulla. In tristique dictum eros quis commodo</h2>
+                            <h2 class="normal_h2">Donec commodo, diam vel efficitur laoreet, dolor est faucibus neque,
+                                eu malesuada ipsum quam id nulla. In tristique dictum eros quis commodo</h2>
                         </article>
                     </a>
                 </div>
+            </div>
+            <div class="center media_short">
+                <ul class="bottoni-linea">
+                    <li class="slick-active">
+                        <button>1<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>2<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>3<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>4<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>5<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>6<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>7<!-- --></button>
+                    </li>
+                    <li class="">
+                        <button>8<!-- --></button>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -973,7 +1131,8 @@
                                            height="24px"></a></div>
                 <div class="left-margin"><a href="#contact"><img src="image/x_logo.png" alt="x" width="24px"
                                                                  height="24px"></a></div>
-                <div class="left-margin"><a href="#news"><img src="image/instagram_logo.png" alt="instagram" width="24px"
+                <div class="left-margin"><a href="#news"><img src="image/instagram_logo.png" alt="instagram"
+                                                              width="24px"
                                                               height="24px"></a></div>
                 <div class="left-margin"><a href="#home" class="active"><img src="image/whatsapp_logo.png"
                                                                              alt="whatsapp" width="24px" height="24px"></a>
@@ -993,14 +1152,17 @@
             </ul>
         </div>
         <div class="clear-box">
-            <div><img src="https://placehold.co/87x75/png" alt="Notizia numero 51"></div>
+            <div class="center"><img src="https://placehold.co/87x75/png" alt="Notizia numero 51"></div>
         </div>
     </div>
     <div class="blue">
         <div class="width_page">
-            <p>Donec nunc ante, accumsan non erat sit amet, mattis tempor nibh. Nunc in sollicitudin nulla, id lobortis nulla. Aenean sed imperdiet quam. Integer eu neque arcu. Nullam a eros a eros aliquam</p>
+            <p>Donec nunc ante, accumsan non erat sit amet, mattis tempor nibh. Nunc in sollicitudin nulla, id lobortis
+                nulla. Aenean sed imperdiet quam. Integer eu neque arcu. Nullam a eros a eros aliquam</p>
             <hr>
-            <p>Curabitur vitae justo nec magna malesuada lacinia et eu nibh. Praesent pharetra pharetra velit. Nam consequat, tellus tristique luctus rhoncus, justo ex sagittis leo, sit amet cursus urna enim sed mauris</p>
+            <p>Curabitur vitae justo nec magna malesuada lacinia et eu nibh. Praesent pharetra pharetra velit. Nam
+                consequat, tellus tristique luctus rhoncus, justo ex sagittis leo, sit amet cursus urna enim sed
+                mauris</p>
         </div>
     </div>
 </footer>
