@@ -234,10 +234,7 @@ header {
 .PPNgrande {
     max-width: 66%;
     padding-bottom: 12px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-
+    float: left;
 }
 
 .PPNgrande a img{
@@ -254,7 +251,6 @@ header {
     border-radius: 0;
     padding: 0;
     flex-direction: column;
-    text-align: center;
 }
 
 .PPNgrande h2 {
