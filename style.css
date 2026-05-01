@@ -104,7 +104,7 @@ header {
     gap: 20px;
 }
 
-#menu_bar {
+#menu_bar div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -189,6 +189,13 @@ header {
     padding: 0 10px;
 }
 
+.video_slide a img {
+    width: 100%;
+    height: 100%;
+    max-width: 228px;
+    max-height: 128px;
+}
+
 .video_slide span {
     line-height: 1.25;
     font-size: 1rem;
@@ -227,7 +234,10 @@ header {
 .PPNgrande {
     max-width: 66%;
     padding-bottom: 12px;
-    float: left;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .PPNgrande a img{
@@ -244,6 +254,7 @@ header {
     border-radius: 0;
     padding: 0;
     flex-direction: column;
+    text-align: center;
 }
 
 .PPNgrande h2 {
@@ -507,6 +518,8 @@ section.smaller a{ /* da modificare */
 section.smaller a article{
     margin-left: 11px;
 }
+
+
 
 .greater {
     box-sizing: border-box;
@@ -1191,6 +1204,12 @@ footer div.blue {
 }
 
 @media (max-width: 899px) {
+
+    .media_short_flex {
+        display: flex;
+        flex-direction: column;
+    }
+
     body{
         padding: 0;
         margin: 0;
@@ -1219,6 +1238,31 @@ footer div.blue {
         display: none;
     }
 
+    span{
+        font-size: 1.1429rem;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        color: #921421;
+    }
+
+    .text_big {
+        margin: 4px 0px 0px;
+        font-size: 1.8219rem;
+    }
+
+    .text_small {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .autore{
+        text-align: center;
+    }
+
     header div.red_button button{
         background-color: #921421;
         color: white;
@@ -1240,6 +1284,10 @@ footer div.blue {
         padding: 8px;
     }
 
+    #logo-grid div.center img{
+        margin-right: 8px;
+    }
+
     #logo-grid img{
         margin: 0;
     }
@@ -1248,6 +1296,7 @@ footer div.blue {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
 
     }
 
@@ -1260,28 +1309,23 @@ footer div.blue {
 
     #PrimoPianoNews{
         padding: 0;
-    }
-
-
-    #PrimoPianoNews h5, #PrimoPianoNews h2, #PrimoPianoNews span{
-        text-align: center;
-    }
-
-    #PrimoPianoNews span.autore{
-        text-align: left;
+        border: none;
     }
 
     .PPNgrande  , .PPNpiccolo {
         float: none;
         max-width: 100%;
         padding: 0;
-        border-bottom: 1px solid #cbcfd3;
     }
 
-    .PPNgrande a {
+    div.PPNgrande a article{
         text-align: center;
     }
 
+    .PPNgrande h2{
+        margin: 4px 0px 0px;
+        font-size: 1.8219rem;
+    }
 
     .PPNgrande a img{
         margin-top: 4px;
@@ -1294,19 +1338,26 @@ footer div.blue {
 
     .PPNpiccolo {
         height: 100%;
-        display: flex;
-        flex-direction: column;
         box-sizing: border-box;
         flex-wrap: wrap;
         max-width: 100%;
+        border: 0;
+    }
+
+    .PPNpiccolo a {
+        max-width: 100%;
+        margin: 0;
+        margin-top: 4px;
+        padding: 16px;
+        height: 100%;
+        text-decoration: none;
         border-bottom: 1px solid;
         border-color: #CBCFD3;
     }
 
-    .PPNpiccolo a {
-        margin: 0;
-        padding-bottom: 12px;
-        max-width: 100%;
+    .PPNpiccolo a h2{
+        text-align: left;
+        margin-top: 4px;
     }
 
     .PPNpiccolo a img{
@@ -1318,20 +1369,16 @@ footer div.blue {
         max-height: 487px;
     }
 
-    .PPNpiccolo a h2 {   /*da cambiare*/
-        margin-top: 4px;
-    }
-
     #PrimoPianoNewsMinor {
         flex-basis: 100%;
         flex-grow: 0;
         max-width: 100%;
         box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
-        margin: 0;
+        margin-top: 4px;
+        height: 100%;
+
     }
 
     .news_slide {
@@ -1346,19 +1393,29 @@ footer div.blue {
         flex-grow: 0;
         max-width: 100%;
         box-sizing: border-box;
-        margin-bottom: 2px;
-        padding-bottom: 12px;
-        padding-right: 6px;
-        padding-left: 0;
         border-bottom: 1px solid #cbcfd3;
+        border-radius: 0;
+        margin: 4px 0px 0px;
+        padding: 0;
+        line-height: 1;
+        height: 100%;
+        text-decoration: none;
     }
 
     .news_slide_single a {
-        margin: 0;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
         border-radius: 0;
-        padding-bottom: 12px;
+        margin: 4px 0px 0px;
         border: 0;
         line-height: 1;
+        height: 100%;
+    }
+
+    .news_slide_single article {
+        margin: 8px 0px 0px;
     }
 
     .news_slide_single a img{
@@ -1375,6 +1432,9 @@ footer div.blue {
     #Network {
         width: 100%;
         line-height: 1.2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     #Network h5{
@@ -1384,17 +1444,26 @@ footer div.blue {
     .network_slide {
         gap: 20px;
         display: flex;
-        box-sizing: border-box;
         justify-content: space-between;
-        padding: 0 10px;
+        box-sizing: border-box;
+        padding: 0 8px;
         width: 100%;
-        margin: 12px 0;
     }
 
-    .network_slide_single {
+    #Network .media_short {
         display: block;
+        width: 100%;
         height: 100%;
-        width: 450px;
+        min-height: 1px;
+        padding: 8px;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    #Network .network_slide_single {
+        display: block;
+        width: 100%;
+        height: 100%;
         min-height: 1px;
         padding: 8px;
         line-height: 1.2;
@@ -1409,7 +1478,6 @@ footer div.blue {
         height: 100%;
         max-width: 300px;
         max-height: 80px;
-
     }
 
     h5 {
@@ -1431,6 +1499,7 @@ footer div.blue {
         flex-direction: column;
         align-items: center;
         line-height: 1.2;
+        margin: 0;
     }
 
     .space {
@@ -1451,6 +1520,11 @@ footer div.blue {
 
     }
 
+    #Evidenza a{
+        padding-right: 0;
+
+    }
+
     section.smaller a{
         flex-basis: 100%;
         flex-grow: 0;
@@ -1458,7 +1532,7 @@ footer div.blue {
         box-sizing: border-box;
         margin: 0;
         padding-bottom: 12px;
-        padding-right: 6px;
+        padding-right: 0;
         padding-left: 0;
         display: flex;
         flex-direction: column;
@@ -1528,10 +1602,18 @@ footer div.blue {
         padding-left: 6px;
     }
 
-    div.media_short section.video{
+    #Evidenza section.video div.video_slide a{
+        padding: 8px;
+        margin: 0;
+    }
+
+    #Evidenza section.video div.video_slide a img{
         margin: 8px 0px 0px;
         flex-direction: column;
         width: 100%;
+        height: 100%;
+        max-width: 417px;
+        max-height: 235px;
     }
 
     #Evidenza div.side section div.news_colomn a img{
@@ -1539,6 +1621,14 @@ footer div.blue {
         height: 100%;
         max-width: 851px;
         max-height: 478px;
+    }
+
+    #Sport div.news_colomn_twin div{
+        text-align: center;
+    }
+
+    #Sport div.news_colomn_twin div div.link_secondario, #Sport div.news_colomn_twin div article{
+        text-align: left;
     }
 
     #Sport div.news_block{
@@ -1556,8 +1646,6 @@ footer div.blue {
     .news_colomn_twin {
         width: 100%;
         max-width: 100%;
-        display: flex;
-        flex-direction: column;
         align-items: center;
         box-sizing: border-box;
         flex-wrap: wrap;
@@ -1579,59 +1667,62 @@ footer div.blue {
         max-height: 506px;
     }
 
-    #ItaliaMondo div.news_slide_single a div img{
-        width: 100%;
-        height: 100%;
-        max-width: 899px;
-        max-height: 506px;
-    }
-
     #ItaliaMondo .news_slide {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100%;
     }
 
-    #ItaliaMondo .news_slide_single.only_media_short {
+    #ItaliaMondo .news_slide a {
         display: flex;
-        flex-direction: row;
-        flex-basis: 100%;
-        flex-grow: 0;
-        max-width: 100%;
-        box-sizing: border-box;
-        justify-content: center;
-    }
-
-    #ItaliaMondo .news_slide_single.only_media_short a {
-        margin: 0;
-        border-radius: 0;
+        flex-direction: column;
+        text-align: center;
         padding-bottom: 12px;
-        border: 0;
-        line-height: 1;
-    }
-
-    #ItaliaMondo a div.only_media_short , #ItaliaMondo a article.only_media_short{
-        width: 50%;
-    }
-
-    #ItaliaMondo div.news_slide_single.only_media_short a article{
-        float: right;
-    }
-
-    #ItaliaMondo div.news_slide_single.only_media_short a div{
-        float: left;
     }
 
 
-    #ItaliaMondo div.news_slide_single.only_media_short a div img{
+    #ItaliaMondo .news_slide_single{
+        margin-top: 4px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #ItaliaMondo .news_slide_single.only_media_short{
+        padding: 16px;
+    }
+
+    #ItaliaMondo .news_slide_single a div img {
         width: 100%;
-        height: 100%;
+        height: auto;
+        max-width: 899px;
+        max-height: 506px;
+    }
+
+
+    #ItaliaMondo .only_media_short a {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        margin: 0;
+        border: 0;
+    }
+
+    #ItaliaMondo .only_media_short a div,
+    #ItaliaMondo .only_media_short a article {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    #ItaliaMondo .only_media_short a article {
+        padding-left: 10px;
+    }
+
+    #ItaliaMondo .only_media_short a div img {
         max-width: 429px;
         max-height: 241px;
     }
 
-    #ItaliaMondo .news_slide_single h2 { /*da cambiare*/
+    #ItaliaMondo .news_slide_single h2 {
         margin-top: 4px;
     }
 
@@ -1646,6 +1737,19 @@ footer div.blue {
     #Economia div.news_block{
         display: flex;
         flex-direction: column;
+        text-align: center;
+    }
+
+    #Economia div.news_block div.news_colomn_twin a{
+        text-align: center;
+    }
+
+    #Economia div.news_block div.news_colomn_twin div.link_secondario a{
+        text-align: left;
+    }
+
+    #Economia div.text_left article{
+        text-align: left;
     }
 
     #Economia img.imgSportivaPrinc{
@@ -1657,6 +1761,27 @@ footer div.blue {
 
     #Economia div.news_colomn_twin{
         border:0 ;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        border-bottom: 1px solid #CBCFD3;
+    }
+
+    #Economia div.news_colomn_twin div.link_secondario{
+        text-align: left;
+    }
+
+    #SpecEnog div.news_colomn_twin div article{
+        text-align: center;
+    }
+
+    #SpecEnog div.news_colomn_twin div div.link_secondario{
+        text-align: left;
+    }
+
+    #SpecEnog div.text_left article.equa_divisione{
+        text-align: left;
     }
 
     .last_video a div img {
@@ -1679,7 +1804,7 @@ footer div.blue {
     }
 
     .little_news_left{
-        border-bottom: #cbcfd3;
+        border-bottom:1px solid #cbcfd3;
     }
 
     .little_news_left a div img {
@@ -1689,15 +1814,17 @@ footer div.blue {
         max-height: 506px;
     }
 
+    .little_news_right{
+        flex-basis: 100%;
+        margin-top: 4px;
+        padding: 16px;
+    }
+
     .little_news_right a div img {
         width: 100%;
         height: 100%;
         max-width: 899px;
         max-height: 506px;
-    }
-
-    .little_news_right{
-        flex-basis: 100%;
     }
 
     .little_news_right a.little_news_list_a div {
@@ -1773,19 +1900,47 @@ footer div.blue {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        text-align: center;
+    }
+    .news_block_interv {
+        text-align: center;
     }
 
     .news_block_interv_left {
-        flex-grow: 0;
-        box-sizing: border-box;
-        flex-wrap: wrap;
-        margin: 0;
-        flex-direction: row;
         flex-basis: 100%;
         max-width: 100%;
-        padding-right: 6px;
-        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
         padding-bottom: 12px;
+        border-bottom: 1px solid #cbcfd3;
+        padding-right: 0;
+    }
+
+    .news_block_interv_left div.link_secondario {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: auto;
+    }
+
+    .news_block_interv_left div.link_secondario span {
+        margin-right: 5px;
+    }
+
+    .news_block_interv_left div.link_secondario a {
+        text-decoration: none; /* Rimuove la sottolineatura dal link */
+        line-height: 1.3;
+    }
+
+    .news_block_interv_left a article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
     }
 
     .news_block_interv_left a img{
@@ -1800,12 +1955,25 @@ footer div.blue {
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        margin: 0;
+        margin-top: 4px;
         flex-direction: row;
         flex-basis: 100%;
         max-width: 1000%;
         padding-right: 0;
         padding-left: 6px;
+        text-align: left;
+    }
+
+    .news_block_interv_right a{
+        margin-top: 5px;
+        padding: 5px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .news_block_interv_right a span.autore{
+        text-align: left;
     }
 
     .news_block_interv_right img {
@@ -1816,25 +1984,18 @@ footer div.blue {
         display: block;
     }
 
-    .news_block_interv_right a{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
     .news_block_interv_right div{
         width: 50%;
         height: auto;
     }
 
-
     .news_block_interv_right article {
         width: 50%;
         max-width: 429px;
-        padding-left: 10px; /* Aggiunge un po' di respiro tra immagine e testo */
+        padding-left: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Centra il testo in altezza rispetto alla foto */
+        justify-content: center;
     }
 
     #Misto section.news_slide{
@@ -1849,9 +2010,19 @@ footer div.blue {
         max-height: 244px;
     }
 
+    #Misto div.right{
+        margin: 0;
+    }
+
     #SaniBelli div.news_slide{
         display: flex;
         flex-direction: row;
+    }
+
+    #SaniBelli div.news_slide_single{
+        margin: 0;
+        padding: 8px;
+        border: 0;
     }
 
     #SaniBelli img{
