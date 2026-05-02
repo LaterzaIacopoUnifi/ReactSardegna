@@ -1950,6 +1950,13 @@ footer div.blue {
         line-height: 1.2;
     }
 
+    #Misto a.attivita_sociali img{
+        width: 100%;
+        height: 100%;
+        max-width: 820px;
+        max-height: 312px;
+    }
+
     #Misto div.left {
         display: flex;
         flex-direction: column;
@@ -1984,6 +1991,13 @@ footer div.blue {
     }
     .news_block_interv {
         text-align: center;
+    }
+
+    .news_block_interv_left a {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
     }
 
     .news_block_interv_left {
